@@ -1,0 +1,488 @@
+nav, header, footer{
+    display: block;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: initial !important;
+  }
+fieldset,img { 
+    border:0;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+.allfont{
+    font-family: "Times New Roman", Times, serif;
+}
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    }
+.content{
+    background-color: rgba(16, 67, 87, 0.4);  
+}
+@keyframes mymove {
+    from {
+      transform: scale(1) translateX(0);
+    }
+    to {
+      transform: scale(1.5) translateY(-5%);
+    }
+  }
+.background { 
+    width: 100%;
+    height: 110%; 
+    min-width: 100%; 
+    min-height: 100%; 
+    position: relative;
+    margin:0;
+}
+.background::before{
+    background-image: url("img/exterior12.jpg");
+    background-position: center ;   
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    -webkit-animation:mymove 20s linear infinite;
+    max-width: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: -2;
+    opacity: 1;
+}
+.background::after { 
+    background-color: rgb(185, 154, 12); 
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    height: 110%; 
+    z-index: -1; 
+    opacity: 1;
+ } 
+/*.layer{
+    
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 110%;
+}*/
+nav{
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden; 
+    background-color: transparent;  
+    transition: 0.3s;
+}
+
+#padnav{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 16px;
+    text-transform: uppercase;
+   
+    text-transform: none;
+}
+
+#navcolor{
+    color: white;
+}
+.padnav2{
+    color: white;
+}
+.navbutton{
+    font-size: 20px;
+}
+.navbutton:hover{
+    background-color: purple;
+    color: purple;
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 200px;
+    font-size: 68px;
+    text-align: center;
+    color: white; 
+}
+
+.tgb{
+    font-size: 62px;
+    color: rgb(255, 255, 255);
+    z-index: 0;
+}
+.workdone{
+    align-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+    z-index: 0;
+    color: white;
+}
+ul.top li{
+    list-style: none;
+    float: left;
+}
+#logo{
+    margin-top: 10px;
+}
+
+#padnav2{
+    margin-top: 10px;
+}
+#right2{
+    margin-top: 10px;
+}
+ul.top li.right{
+    float: right;
+    padding-top: 0px;
+}
+
+
+ul.top li a:hover {
+    text-decoration: none;
+    color: purple;
+}
+ul.top li.dropdown {
+    display: none;
+}
+
+.buttons{
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.newimage a:hover{
+    text-decoration: none;
+    color: purple;
+}
+
+.butn {
+    border: 2px solid black;
+    background-color: transparent;
+    color: white;
+    padding: 6px 43px;
+    margin-right: 38px;
+    margin-left: 38px;
+    cursor: pointer;
+}
+.info {
+    border-color: white;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 260px;
+}
+
+.info:hover {
+    background: purple;
+    border-color: purple;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.background2{
+    background-color: #DCAE96;
+}
+.imagebutton {
+    border-color: white;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 15px;
+}
+.imagebutton:hover {
+    background: purple;
+    border-color: purple;
+    color: white;
+}
+.authentic{
+    padding-top: 250px;
+    text-align: center;
+    align-content: center;
+    
+}
+.threeimages{
+    text-align: center;
+    align-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.rowmargin{
+    margin-bottom: 200px;
+    padding: 10px;
+}
+.colpadding{
+    text-align: center;
+}
+.imgpad{
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+    opacity: 1;
+}
+.newimage{
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #cea48d;
+    margin-bottom: 30px;
+}
+.newimage:hover{
+    background-color: #DCAE96;
+    border: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.whyus{
+    padding-top: 300px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.twocoltext{
+    margin-bottom: 70px;
+}
+.mobilecoltext{
+    text-align: justify;
+}
+.lastcoltext{
+    margin-bottom: 200px;
+}
+.background3{
+    background-color: skyblue;
+    color: black;
+}
+
+.imagefooter{
+    height:10px;
+    width:10px;
+    align-content: center;
+    position: absolute;
+}
+.margintopfooter{
+    padding-top: 80px;
+}
+.marginiconsfooter{
+    padding-top: 20px;
+}
+.alignstuff{
+    text-align: center;
+    display: block;
+}
+.marginbotfooter{
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+.edgewave{
+    height: 40px;
+}
+
+/*Page- About CSS*/
+.aboutheading{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+.abouttgb {
+   text-decoration: none;
+   color: white    ;
+}
+.abouttgb:hover{
+   text-decoration: none;
+   color: purple;
+}
+.abouttext{
+   margin-right: 10px;
+}
+.aboutfont{
+   font-size: 30px;
+   padding-bottom: 100px;
+}
+
+/*Services CSS*/
+.servicesheading{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.servicespadding{
+    padding-left: 300px;
+}
+
+
+
+
+.contactheading{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+.contactpadding{
+    padding-top: 20px;
+}
+.address{
+    background-color: white;
+}
+.contactmaps{
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    ul.top li:not(:nth-child(1)) {
+        display: none;
+    }
+    #right2{
+        display: none;
+    }
+    ul.top li.dropdown {
+        display: block;
+        float: right;
+        padding-top: 10px;
+    }
+    .tgb{
+        font-size: 30px;
+    }
+    .imgpad{
+        opacity: 1;
+    }  
+    .nav{
+        position: absolute;
+    }
+    .edgewave{
+        height: 20px;
+    }
+    .marginbotfooter{
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    .aboutfont{
+        font-size: 20px;
+    }
+    .info{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .mobileimagemargin{
+        padding: 100px
+    }
+    .onecoltext{
+        margin-bottom: 70px;
+    }
+    .mobilecoltext{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contactmaps{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .margintopfooter{
+        padding-top: 0px;
+    }
+    .address{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .servicespadding{
+        padding-left: 0px;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .address{
+        margin-left: 30px;
+        margin-right: 30px;
+
+    }
+    .contactmaps{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .servicespadding{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .servicespadding{
+        padding-left: 0px;
+    }
+}
+
+ul.top.response {
+    position: relative;
+}
+ul.top.response li.dropdown{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.top.response li {
+    display: inline;
+    float: none;  
+}
+ul.top.response li a.padnav {
+    display: block;
+    text-align: right; 
+}
+
+
+
+.foot {
+     background: #191970;    
+    /* background: -webkit-linear-gradient(skyblue,#191970); */
+}
+.fa-facebook-square {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-whatsapp{
+    color: white;
+}
+
+.fa-google {
+    color: white;
+}
+.fa-facebook-square:hover {
+    color: blue;
+}
+.fa-instagram:hover {
+    color: pink;
+}
+.fa-google:hover {
+    color: red;
+}
+.fa-whatsapp:hover{
+    color: green;
+}
+
+
+
+
+
+
+ 
+
+
+
+
