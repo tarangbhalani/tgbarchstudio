@@ -259,6 +259,11 @@ ul.top li.dropdown {
     text-align: center;
     margin-bottom: 150px;
 }
+.reviews{
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 150px;
+}
 .twocoltext{
     margin-bottom: 70px;
 }
@@ -271,6 +276,24 @@ ul.top li.dropdown {
 .background3{
     background-color: skyblue;
     color: black;
+}
+
+.carousel img {  
+    padding-left: 18%;
+    max-width: 85%;
+  }
+
+  
+.carousel-indicators .active {
+    background-color: #444;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+.carousel{
+    margin-bottom: 400px;
 }
 
 .imagefooter{
@@ -403,6 +426,12 @@ ul.top li.dropdown {
     }
     .servicespadding{
         padding-left: 0px;
+    }
+    .carousel{
+        margin-bottom: 300px;
+    }
+    .reviews{
+        margin-bottom: 100px;
     }
     
 }
