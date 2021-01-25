@@ -427,6 +427,10 @@ ul.top li.dropdown {
     .servicespadding{
         padding-left: 0px;
     }
+    .carousel img {  
+        padding-left: 0%;
+        max-width: 100%;
+      }
     .carousel{
         margin-bottom: 300px;
     }
@@ -448,6 +452,10 @@ ul.top li.dropdown {
     .servicespadding{
         padding-left: 0px;
     }
+    .carousel img {  
+        padding-left: 0%;
+        max-width: 100%;
+      }
 }
 @media screen and (max-width: 1400px) {
     .servicespadding{
