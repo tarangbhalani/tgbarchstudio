@@ -60,6 +60,7 @@
       <a href="./about.html" class="navbutton w3-bar-item w3-button" style="text-align: right; padding-right: 30px;">About </a>
       <a href="./services.html" class="navbutton w3-bar-item w3-button" style="text-align: right; padding-right: 30px;">Services</a>
   </div>
+  
     <script>
        function openRightMenu() {
            document.getElementById("rightMenu").style.display = "block";
@@ -71,12 +72,36 @@
 
     </script>
    
+   <script>    //Changing color of navbar
+    window.addEventListener("scroll", function(){
+        if (window.pageYOffset>0) {
+        document.getElementById("topnav").style.backgroundColor= "white";
+        document.getElementById("logo").style.display= "none";
+        document.getElementById("logocover").style.display= "block";
+        document.getElementById("topnav").style.boxShadow="0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19)";  
+        document.getElementById("navcolor").style.color="black";
+        document.getElementById("topnav").style.padding="0px 20px";
+        document.getElementById("padnav2").style.marginTop="0px";
+        document.getElementById("right2").style.marginTop="6px";
+        document.getElementById("dropdown2").style.paddingTop="15px";
+      } else{
+        document.getElementById("topnav").style.backgroundColor= "transparent";
+        document.getElementById("logo").style.display= "block";
+        document.getElementById("logocover").style.display= "none";         
+        document.getElementById("topnav").style.boxShadow="none";
+        document.getElementById("navcolor").style.color="white";  
+        document.getElementById("topnav").style.padding="10px 20px";
+        document.getElementById("padnav2").style.marginTop="10px";
+        document.getElementById("right2").style.marginTop="10px";
+      }
+     });
+  </script>
     
     <header>
         <p class="header tgb" ><b> TGBArchStudio </b> </p>    
     </header> 
         
-       <h5 class="workdone" > Architecture | Interior | 3D Visuals </h5>
+       <h5 class="workdone" > 3D Visualization Studio </h5>
     <div class="buttons firstbuttons">
       <button class="butn info" onclick="window.location.href='./services.html';"><h5 style="z-index: 0;">Services</h5></button>
       <button class="butn info" onclick="window.location.href='./about.html';"><h5 style="z-index: 0;">About us</h5></button>
@@ -84,17 +109,17 @@
     <div class="mobileimagemargin"></div>
   </div><!--End of background opacity color-->
 </div> <!--End of background image-->>
-     
-
+   
+</div>  
 
 
 
 <div class="background2">
 <div >
-  <h5 class="authentic" style="color: white;">Authentic and modern</h5>
+  <h5 class="authentic" style="color: black;">Authentic and modern</h5>
 </div>
 <div>
-  <h2 class="threeimages" style="color: white;"> Our sample of 3D Images </h2>
+  <h2 class="threeimages" style="color: black;"> Our sample of 3D Images </h2>
 </div>
 
 
@@ -113,7 +138,7 @@
                             alt="Exterior images" 
                             class="imgpad" />
                     <br>
-                        <h5 style="color:white;">Exterior Images</h5>
+                        <h5 style="color:black;">Exterior Images</h5>
                     <br>
                     <br>
                   </a>
@@ -128,7 +153,7 @@
                         alt="Interior images" 
                         class="imgpad"/>
                 <br>
-                    <h5 style="color:white;">Interior Images</h5>
+                    <h5 style="color:black;">Interior Images</h5>
                 <br>
                 <br>
               </a>
@@ -142,7 +167,7 @@
                         alt="Other images" 
                         class="imgpad" />
                 <br>
-                    <h5 style="color:white;">Other Images</h5>
+                    <h5 style="color:black;">Other Images</h5>
                 <br>
                 <br>
               </a>
@@ -153,7 +178,7 @@
 
  
 <div class="background3">
- <div><h2 class="whyus" style="color: white;">Why Us?</h2></div>
+ <div><h2 class="whyus" style="color: black;">Why Us?</h2></div>
 
 
 <!--**********************Text Section*************************-->
@@ -185,7 +210,7 @@
   <div class="col-sm-1">    
   </div>
   <div class="col-sm-4 onecoltext">
-    <h5 class="mobilecoltext">We provide upto 2 UHD images in one package.</h5>
+    <h5 class="mobilecoltext">We provide upto 5 UHD images in one package.</h5>
   </div>
   <div class="col-sm-2"></div>
   <div class="col-sm-4">
@@ -194,7 +219,7 @@
   <div class="col-sm-1"></div>
 </div>
 
-<div><h2 class="reviews" style="color: white;">Reviews</h2></div>
+<div><h2 class="reviews" style="color: black;">Reviews</h2></div>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -238,7 +263,7 @@
 
 
 <div class="edgewave">         <!--Using svg wave generator-->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#87ceeb" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,128C640,128,800,160,960,192C1120,224,1280,256,1360,272L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,128C640,128,800,160,960,192C1120,224,1280,256,1360,272L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
 </div>
 </div>  <!--Background 3 end-->
 
@@ -256,12 +281,14 @@
         <div class="row marginiconsfooter">
           <div class="col-4"></div>
           <div class="col-4 alignstuff">
-              <a href="https://www.facebook.com/tarang.bhalani.1614">
+              <a href="https://www.facebook.com/tgbarchstudio">
               <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>  </a>
               <a href="https://www.instagram.com/tgbarchstudio/">     
               <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
               <a href="https://wa.link/o279ek">      
-              <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+              <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured">      
+              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
           </div>
             <div class="col-4"></div>
             <p class="marginbotfooter" style="color: white">Copyright &copy; TGBArchStudio</p>  
@@ -274,30 +301,7 @@
   
   
   
-<script>    //Changing color of navbar
-  window.addEventListener("scroll", function(){
-      if (window.pageYOffset>0) {
-      document.getElementById("topnav").style.backgroundColor= "white";
-      document.getElementById("logo").style.display= "none";
-      document.getElementById("logocover").style.display= "block";
-      document.getElementById("topnav").style.boxShadow="0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19)";  
-      document.getElementById("navcolor").style.color="black";
-      document.getElementById("topnav").style.padding="0px 20px";
-      document.getElementById("padnav2").style.marginTop="0px";
-      document.getElementById("right2").style.marginTop="6px";
-      document.getElementById("dropdown2").style.paddingTop="15px";
-    } else{
-      document.getElementById("topnav").style.backgroundColor= "transparent";
-      document.getElementById("logo").style.display= "block";
-      document.getElementById("logocover").style.display= "none";         
-      document.getElementById("topnav").style.boxShadow="none";
-      document.getElementById("navcolor").style.color="white";  
-      document.getElementById("topnav").style.padding="10px 20px";
-      document.getElementById("padnav2").style.marginTop="10px";
-      document.getElementById("right2").style.marginTop="10px";
-    }
-   });
-</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
 <script src="/js/my.js"></script>

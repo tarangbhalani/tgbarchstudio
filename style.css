@@ -21,20 +21,9 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 .allfont{
     font-family: "Times New Roman", Times, serif;
 }
-.spinner-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ff6347;
-    z-index: 999999;
-    position: absolute;
-    top: 48%;
-    left: 48%;
-    }
+
 .content{
-    background-color: rgba(16, 67, 87, 0.4);  
+    background-color: rgba(126, 204, 233, 0.00);    /*keeping opacity 0 for the new version*/
 }
 @keyframes mymove {
     from {
@@ -53,7 +42,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
     margin:0;
 }
 .background::before{
-    background-image: url("img/exterior12.jpg");
+    background-image: url("img/6.jpg");  /*old image url exterior12.jpg */
     background-position: center ;   
     background-repeat: no-repeat;
     background-size:cover;
@@ -95,7 +84,7 @@ nav{
 }
 
 #padnav{
-    text-decoration: none;
+    
     display: block;
     text-align: center;
     padding-left: 12px;
@@ -114,11 +103,11 @@ nav{
 .navbutton{
     font-size: 20px;
 }
-.navbutton:hover{
+/*.navbutton:hover{
     background-color: purple;
     color: purple;
-    text-decoration: none;
-}
+    text-decoration: underline;
+}*/
 
 .header {
     padding-top: 200px;
@@ -159,10 +148,35 @@ ul.top li.right{
 }
 
 
-ul.top li a:hover {
-    text-decoration: none;
-    color: purple;
+/*ul.top li a:hover {
+    text-decoration: underline;
+    color: black;  
+}*/
+ul.top li a {
+    display: inline-block;
+    text-decoration: None;
+    position: relative;
+    color: black;
 }
+
+ul.top li a:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 12%;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+ul.top li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 ul.top li.dropdown {
     display: none;
 }
@@ -171,10 +185,6 @@ ul.top li.dropdown {
     align-content: center;
     text-align: center;
     margin-top: 20px;
-}
-.newimage a:hover{
-    text-decoration: none;
-    color: purple;
 }
 
 .butn {
@@ -195,27 +205,16 @@ ul.top li.dropdown {
 }
 
 .info:hover {
-    background: purple;
-    border-color: purple;
+    background-color: rgba(16, 67, 87, 0.4);
+    border-color: rgba(16, 67, 87, 0.4);
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 
 .background2{
-    background-color: #DCAE96;
+    background-color: white;  /*Old color- #DCAE96*/
 }
-.imagebutton {
-    border-color: white;
-    color: white;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 15px;
-}
-.imagebutton:hover {
-    background: purple;
-    border-color: purple;
-    color: white;
-}
+
 .authentic{
     padding-top: 250px;
     text-align: center;
@@ -246,14 +245,18 @@ ul.top li.dropdown {
 .newimage{
     border: 1px solid gray;
     text-align: center;
-    background-color: #cea48d;
+    background-color: white;
     margin-bottom: 30px;
 }
 .newimage:hover{
-    background-color: #DCAE96;
+    background-color: rgb(236, 232, 232);
     border: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.newimage a:hover{
+    text-decoration: none;
+}
+
 .whyus{
     padding-top: 300px;
     text-align: center;
@@ -265,7 +268,7 @@ ul.top li.dropdown {
     margin-bottom: 150px;
 }
 .twocoltext{
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 .mobilecoltext{
     text-align: justify;
@@ -274,7 +277,7 @@ ul.top li.dropdown {
     margin-bottom: 200px;
 }
 .background3{
-    background-color: skyblue;
+    background-color: white;
     color: black;
 }
 
@@ -293,7 +296,8 @@ ul.top li.dropdown {
   filter: invert(1);
 }
 .carousel{
-    margin-bottom: 400px;
+    padding-bottom: 20px;
+    margin-bottom: 300px;
 }
 
 .imagefooter{
@@ -315,11 +319,17 @@ ul.top li.dropdown {
 .marginbotfooter{
     padding-top: 40px;
     padding-left: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 .edgewave{
     height: 40px;
 }
+.foot {
+    background-color: rgba(16, 67, 87, 0.4);
+       
+     /*background: -webkit-linear-gradient(grey,black);*/ 
+}
+
 
 /*Page- About CSS*/
 .aboutheading{
@@ -328,7 +338,7 @@ ul.top li.dropdown {
 }
 .abouttgb {
    text-decoration: none;
-   color: white    ;
+   color: black;
 }
 .abouttgb:hover{
    text-decoration: none;
@@ -369,6 +379,7 @@ ul.top li.dropdown {
 }
 
 @media screen and (max-width: 680px) {
+    
     ul.top li:not(:nth-child(1)) {
         display: none;
     }
@@ -385,6 +396,7 @@ ul.top li.dropdown {
     }
     .imgpad{
         opacity: 1;
+        height: 250px;
     }  
     .nav{
         position: absolute;
@@ -483,10 +495,7 @@ ul.top.response li a.padnav {
 
 
 
-.foot {
-     background: #191970;    
-    /* background: -webkit-linear-gradient(skyblue,#191970); */
-}
+
 .fa-facebook-square {
     color: white;
 }
@@ -494,6 +503,9 @@ ul.top.response li a.padnav {
     color: white;
 }
 .fa-whatsapp{
+    color: white;
+}
+.fa-youtube{
     color: white;
 }
 
@@ -513,7 +525,9 @@ ul.top.response li a.padnav {
     color: green;
 }
 
-
+.fa-youtube:hover{
+    color: #FF0000;
+}
 
 
 
