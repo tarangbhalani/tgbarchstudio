@@ -1,10 +1,11 @@
 <!doctype html>
 <!--Margin auto centers items-->
 <html lang="en">
-    <head>
+
+  <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>TGBArchStudio</title>
+        <title>TGB Architecture Studio</title>
         
 <!--   **** Linking css file ****   -->
         <link rel="stylesheet" href="./style.css">
@@ -25,14 +26,21 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
   </head>
-<!--******************   Navigation Bar ***********************-->
-<body class="allfont">
 
-  
 
+
+
+
+
+<!--Resolving the font issues is remaining-->
+
+<body class="allfont" onload="pageloaded()"> 
+<div id="loading"></div>        <!--Pre loader-->
+
+
+<!--**************************************************   Navigation Bar *****************************************************-->
 <div class="content">
- <div class="background"> 
-   <div class="layer">   
+ <div class="background">    
     <nav style="padding-bottom: 10px;" id="topnav">
         <ul class ="top">
           <li id="logo">
@@ -96,7 +104,8 @@
       }
      });
   </script>
-    
+ <!--********************************************   Navigation Bar End ****************************************-->
+   
     <header>
         <p class="header tgb" ><b> TGBArchStudio </b> </p>    
     </header> 
@@ -107,11 +116,13 @@
       <button class="butn info" onclick="window.location.href='./about.html';"><h5 style="z-index: 0;">About us</h5></button>
     </div>
     <div class="mobileimagemargin"></div>
-  </div><!--End of background opacity color-->
-</div> <!--End of background image-->>
-   
+  </div> <!--End of background image-->>
 </div>  
 
+
+
+
+<!-- ************** Section 2 *********************************-->
 
 
 <div class="background2">
@@ -121,11 +132,6 @@
 <div>
   <h2 class="threeimages" style="color: black;"> Our sample of 3D Images </h2>
 </div>
-
-
-<!-- ************** Section 2 *********************************-->
-
-
 
 
 <div class="row rowmargin">
@@ -186,7 +192,7 @@
   <div class="col-sm-1">    
   </div>
   <div class="col-sm-4 onecoltext">
-    <h5 class="mobilecoltext">At TGBArchStudio, we always use architecture software, hence the work done is precise at mm levels. So, the final image can actually be imported in field of work.</h5>
+    <h5 class="mobilecoltext">At TGBArchStudio, we always use architecture softwares, hence the work done is precise at mm levels. So, the final image can actually be imported in field of work.</h5>
   </div>
   <div class="col-sm-2"></div>
   <div class="col-sm-4">
@@ -309,6 +315,15 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
- </body>    
+
+<script>
+  var preloader = document.getElementById('loading');
+  function pageloaded(){
+    preloader.style.display = 'none';
+  }
+
+</script>
+ 
+</body>    
 </html>
 
