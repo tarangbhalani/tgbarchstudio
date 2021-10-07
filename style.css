@@ -130,13 +130,17 @@ nav{
     font-size: 62px;
     color: rgb(255, 255, 255);
     z-index: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .workdone{
+    font-size: 19px;
     align-content: center;
     text-align: center;
     margin-bottom: 5%;
     z-index: 0;
     color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+
 }
 ul.top li{
     list-style: none;
@@ -197,6 +201,10 @@ ul.top li.dropdown {
     margin-top: 20px;
 }
 
+.mainbuttons{
+    z-index: 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
 .butn {
     border: 2px solid black;
     background-color: transparent;
