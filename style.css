@@ -58,7 +58,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 
 /* Do not input the background image in home page at index.html, but do it here*/
 .background::before{
-    background-image: url("img/6.webp");  /*old image url exterior12.jpg */
+    background-image: url("img/i155.webp");  /*old image url 6.webp */
     background-position: center ;   
     background-repeat: no-repeat;
     background-size:cover;
