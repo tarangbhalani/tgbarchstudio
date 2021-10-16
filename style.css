@@ -75,11 +75,10 @@ td {
     transform: scale(1.5) translateY(-5%);
   }
 }
+
 .background {
-  width: 100%;
-  height: 110%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
   margin: 0;
 }
@@ -91,13 +90,13 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  -webkit-animation: mymove 20s linear infinite;
+  -webkit-animation: mymove 60s linear infinite;
   max-width: 100%;
   display: block;
   content: '';
   position: absolute;
   width: 100%;
-  height: 110%;
+  height: 100vh;
   z-index: -2;
   opacity: 1;
 }
@@ -147,24 +146,59 @@ nav {
 }*/
 
 .header {
-  padding-top: 200px;
+  padding-top: 190px;
   font-size: 68px;
   text-align: center;
   color: white;
 }
 
+@keyframes enterFade {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .tgb {
-  font-size: 62px;
-  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 70px;
+  color: rgb(253, 253, 253);
   z-index: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
+.tgb b span {
+  position: relative;
+  display: inline-block;
+  animation: enterFade forwards 3s;
+  /* color: black; */
+}
+@keyframes entryAnimate {
+  to {
+    box-shadow: 0px 0px 180px 88px rgba(0, 0, 0, 0.3);
+  }
+}
+.tgb b::after {
+  content: '';
+  position: absolute;
+  width: 10ch;
+  left: 40%;
+  top: 67%;
+  box-shadow: 0px 0px 180px 1088px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0px 0px 170px 100px rgba(255, 255, 255, 0.3); */
+  z-index: -1;
+  border-radius: 50%;
+  animation: entryAnimate forwards 1s 1s ease-in-out;
+}
+
 .workdone {
   font-size: 19px;
   align-content: center;
   text-align: center;
   margin-bottom: 5%;
-  z-index: 0;
+  z-index: 2;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
