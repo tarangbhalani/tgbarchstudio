@@ -4,4 +4,6 @@
 
 All the css properties are included in one file- style.css
 
+Do not tamper CNAME and key
+
 The content is copyrighted by TGBArchStudio
