@@ -369,7 +369,7 @@ ul.top li.dropdown {
     height: 40px;
 }
 .foot {
-    background-color: rgba(248,240,229, 1);
+    background-color: rgba(16, 67, 87, 0.3);
        
      /*background: -webkit-linear-gradient(grey,black);*/ 
 }
@@ -541,16 +541,16 @@ ul.top.response li a.padnav {
 
 
 .fa-facebook-square {
-    color: gray;
+    color: white;
 }
 .fa-instagram {
-    color: gray;
+    color: white;
 }
 .fa-whatsapp{
-    color: gray;
+    color: white;
 }
 .fa-youtube{
-    color: gray;
+    color: white;
 }
 
 .fa-google {
@@ -577,7 +577,6 @@ ul.top.response li a.padnav {
 
 
  
-
 
 
 
