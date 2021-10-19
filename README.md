@@ -1,4 +1,4 @@
-# tgbarchstudio
+# TGBArchStudio
  
 ## This is a public Repository and we are open to suggestions
 
