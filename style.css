@@ -321,6 +321,7 @@ ul.top li.dropdown {
   margin-top: 70px;
   margin-bottom: 100px;
 }
+
 .rowmargin {
   margin-bottom: 200px;
   padding: 10px;
@@ -354,8 +355,14 @@ ul.top li.dropdown {
 }
 
 .whyus {
-  padding-top: 20px;
+  padding-top: 150px;
   text-align: center;
+  margin-bottom: 0px;
+}
+.offerings {
+  text-align: center;
+  align-content: center;
+  margin-top: 65px;
   margin-bottom: 150px;
 }
 .reviews {
@@ -375,6 +382,9 @@ ul.top li.dropdown {
 .background3 {
   background-color: white;
   color: black;
+}
+.backgroundcolorchange{
+  background-color:  rgb(178,190, 181, 0.6);
 }
 .carousel {
   padding-bottom: 20px;
@@ -406,7 +416,7 @@ ul.top li.dropdown {
   position: absolute;
 }
 .margintopfooter {
-  padding-top: 80px;
+  padding-top: 95px;
 }
 .marginiconsfooter {
   padding-top: 20px;
@@ -418,14 +428,13 @@ ul.top li.dropdown {
 .marginbotfooter {
   padding-top: 40px;
   padding-left: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 .edgewave {
   height: 40px;
 }
 .foot {
   background-color: rgba(16, 67, 87, 0.3);
-
   /*background: -webkit-linear-gradient(grey,black);*/
 }
 
