@@ -13,16 +13,19 @@ footer {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
-html {
-  overflow-x: initial !important;
-}
+
 fieldset,
 img {
   border: 0;
@@ -172,26 +175,15 @@ nav {
 .tgb b span {
   position: relative;
   display: inline-block;
-  animation: enterFade forwards 3s;
+  animation: enterFade forwards 0.3s;
   /* color: black; */
 }
 @keyframes entryAnimate {
   to {
-    box-shadow: 0px 0px 180px 88px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 66px 88px rgba(0, 0, 0, 0.3);
   }
 }
-.tgb b::after {
-  content: '';
-  position: absolute;
-  width: 10ch;
-  left: 40%;
-  top: 67%;
-  box-shadow: 0px 0px 180px 1088px rgba(0, 0, 0, 0.8);
-  /* box-shadow: 0px 0px 170px 100px rgba(255, 255, 255, 0.3); */
-  z-index: -1;
-  border-radius: 50%;
-  animation: entryAnimate forwards 0.4s 1s ease-in-out;
-}
+
 
 .workdone {
   font-size: 19px;
@@ -416,7 +408,7 @@ ul.top li.dropdown {
   position: absolute;
 }
 .margintopfooter {
-  padding-top: 95px;
+  padding-top: 40px;
 }
 .marginiconsfooter {
   padding-top: 20px;
@@ -429,6 +421,7 @@ ul.top li.dropdown {
   padding-top: 40px;
   padding-left: 15px;
   padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 .edgewave {
   height: 40px;
