@@ -167,10 +167,11 @@ nav {
 }
 .tgb {
   position: relative;
-  font-size: 70px;
+  font-size: 60px;
   color: rgb(253, 253, 253);
   z-index: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
 }
 .tgb b span {
   position: relative;
@@ -186,7 +187,7 @@ nav {
 
 
 .workdone {
-  font-size: 19px;
+  font-size: 21px;
   align-content: center;
   text-align: center;
   margin-bottom: 5%;
