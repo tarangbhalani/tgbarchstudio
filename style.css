@@ -120,7 +120,8 @@ nav {
   z-index: 1;
   overflow: hidden;
   background-color: transparent;
-  transition: 0.3s;
+  transition: 0.6s;
+  text-decoration: none;
 }
 
 #padnav {
@@ -185,7 +186,50 @@ nav {
   }
 }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.88);
+  overflow-x: hidden;
+  transition:  0.7s ;
+}
 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.navtext {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #cacaca;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {   /*navtext hover*/
+  color: orange;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  font-size: 110px;
+}
+.navcolor{
+  color: white;
+}
 .workdone {
   font-size: 21px;
   align-content: center;
@@ -209,43 +253,18 @@ ul.top li {
 #right2 {
   margin-top: 10px;
 }
-ul.top li.right {
+.right {
   float: right;
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-right: 50px;
 }
 
 /*ul.top li a:hover {
     text-decoration: underline;
     color: black;  
 }*/
-ul.top li a {
-  display: inline-block;
-  text-decoration: None;
-  position: relative;
-  color: black;
-}
 
-ul.top li a:after {
-  content: '';
-  position: absolute;
-  width: 70%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 12%;
-  background-color: black;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
 
-ul.top li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-ul.top li.dropdown {
-  display: none;
-}
 
 .buttons {
   align-content: center;
@@ -477,17 +496,17 @@ ul.top li.dropdown {
 }
 
 @media screen and (max-width: 680px) {
+  
+  
+
   ul.top li:not(:nth-child(1)) {
     display: none;
   }
-  #right2 {
-    display: none;
-  }
-  ul.top li.dropdown {
-    display: block;
+  .right {
     float: right;
-    padding-top: 10px;
+    padding-right: 25px;
   }
+  
   .tgb {
     font-size: 30px;
   }
@@ -548,9 +567,30 @@ ul.top li.dropdown {
   }
 }
 @media screen and (max-width: 1000px) {
+  .navtext {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #cacaca;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay a:hover, .overlay a:focus {   /*navtext hover*/
+    color: orange;
+  }
+  .overlay .closebtn {
+    top: 0px;
+    right: 40px;
+    font-size: 70px;
+  }
   .address {
     margin-left: 30px;
     margin-right: 30px;
+  }
+  .right {
+    float: right;
+    padding-top: 8px;
+    padding-right: 25px;
   }
   .contactmaps {
     margin-top: 100px;
@@ -568,24 +608,6 @@ ul.top li.dropdown {
   .servicespadding {
     padding-left: 0px;
   }
-}
-
-ul.top.response {
-  position: relative;
-}
-ul.top.response li.dropdown {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-ul.top.response li {
-  display: inline;
-  float: none;
-}
-ul.top.response li a.padnav {
-  display: block;
-  text-align: right;
 }
 
 .fa-facebook-square {

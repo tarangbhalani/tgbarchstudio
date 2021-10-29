@@ -46,56 +46,65 @@
       </li>
 
       <div id="navcolor">
-        <li id="logocover" style="display: none;"><a id="padnav2" href="./index.html"><img class="img-fluid"
-              src="img/1.jpg" width="100" height="40"></a></li>
-        <div id="right2">
-          <li class="right"><a id="padnav" href="./services.html">
-              <h5>Services</h5>
-            </a></li>
-          <li class="right"><a id="padnav" href="./about.html">
-              <h5>About</h5>
-            </a></li>
-          <li class="right"><a id="padnav" href="./contact.html">
-              <h5>Contact</h5>
-            </a></li>
+        <li id="logocover" style="display: none;">
+          <a id="padnav2" href="./index.html">
+            <img class="img-fluid" src="img/1.jpg" width="100" height="40">
+          </a>
+        </li>
+        <div class="right" id="right2">
+          <div id="responsiveSideNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: white;">&times;</a>
+            <div class="overlay-content">
+              <a href="./about.html" style="color: white;">About</a>
+              <a href="./services.html" style="color: white;">Services</a>
+              <a href="./contact.html" style="color: white;">Contact</a>
+            </div>
+          </div>
+          <span style="font-size:30px;cursor:pointer; color: black;" onclick="openNav()">&#9776;</span>
         </div>
-        <li class="dropdown" id="dropdown2"><a id="padnav" href="javascript:void(0);"
-            onclick="openRightMenu()">&#9776;</a></li>
+        <!--<li class="dropdown" id="dropdown2"><a id="padnav" href="javascript:void(0);"
+            onclick="openRightMenu()"> <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large"
+            style="text-align: right; margin-top: 10px; padding-right: 35px;">&#x2716;</button></a></li>-->
 
       </div>
     </ul>
   </nav>
-  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-white"
-    style="display:none; right:0; width: 40%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
-    id="rightMenu">
-    <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large"
-      style="text-align: right; margin-top: 10px; padding-right: 35px;">&#x2716;</button>
-    <a href="./index.html" class="navbutton w3-bar-item w3-button"
-      style="text-align: right; padding-right: 30px;">Home</a>
-    <a href="./contact.html" class="navbutton w3-bar-item w3-button"
-      style="text-align: right; padding-right: 30px;">Contact</a>
-    <a href="./about.html" class="navbutton w3-bar-item w3-button" style="text-align: right; padding-right: 30px;">About
-    </a>
-    <a href="./services.html" class="navbutton w3-bar-item w3-button"
-      style="text-align: right; padding-right: 30px;">Services</a>
-  </div>
+
   <script>
-    function dropmenu() {
-      var x = document.getElementById("click");
-      if (x.className === "top") {
-        x.className += " response";
-      } else {
-        x.className = "top";
-      }
+    function closeNav() {
+      document.getElementById("responsiveSideNav").style.width = "0%";
     }
-    function openRightMenu() {
-      document.getElementById("rightMenu").style.display = "block";
+    function openNav() {
+      document.getElementById("responsiveSideNav").style.width = "100%";
     }
 
-    function closeRightMenu() {
-      document.getElementById("rightMenu").style.display = "none";
-    }
+
   </script>
+
+
+  <script>    //Changing color of navbar
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 0) {
+        document.getElementById("topnav").style.backgroundColor = "rgba(255, 255, 255, 0.85)";
+        document.getElementById("logo").style.display = "none";
+        document.getElementById("logocover").style.paddingTop = "10px";
+        document.getElementById("logocover").style.paddingLeft = "30px";
+        document.getElementById("logocover").style.display = "block";
+        document.getElementById("topnav").style.boxShadow = "0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19)";
+        document.getElementById("navcolor").style.color = "black";
+        document.getElementById("padnav2").style.marginTop = "0px";
+      } else {
+        document.getElementById("topnav").style.backgroundColor = "transparent";
+        document.getElementById("logo").style.display = "block";
+        document.getElementById("logocover").style.paddingTop = " 0px";
+        document.getElementById("logocover").style.display = "none";
+        document.getElementById("topnav").style.boxShadow = "none";
+        document.getElementById("navcolor").style.color = "white";
+      }
+    });
+  </script>
+
+
 
   <div class="aboutheading">
     <h1 style="text-align: center; color: white;"><a href="./interior.html" class="abouttgb">Portfolio of Interior
@@ -113,167 +122,150 @@
 
 
 
-  <div>
-    <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
-      <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
+  <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
+    <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
 
-        <img class="img-fluid" src="img/i78.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i65.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i76.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i74.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i69.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i39.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i2.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i57.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i79.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i38.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i54.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i45.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i481.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i49.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i47.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i43.jpg">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-
+      <img class="img-fluid" src="img/i78.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i65.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i76.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i74.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i69.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i39.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i2.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i57.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i79.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i38.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i54.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i45.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i481.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i49.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i47.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i43.jpg">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
 
 
-      </div>
-
-      <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
-        <img class="img-fluid" src="img/i80.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i77.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i75.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i70.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i68.jpg ">
-        <br><br>
-        <img class="img-fluid" src="img/ir54.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i2.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i4.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i58.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i56.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i40.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i51.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i44.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i53.jpg">
-        <br><br>
-        <img class="img-fluid" src="img/i46.jpg">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-        <img class="img-fluid" src="">
-        <br><br>
-
-      </div>
 
     </div>
 
+    <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
+      <img class="img-fluid" src="img/i80.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i77.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i75.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i70.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i68.jpg ">
+      <br><br>
+      <img class="img-fluid" src="img/ir54.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i2.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i4.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i58.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i56.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i40.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i51.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i44.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i53.jpg">
+      <br><br>
+      <img class="img-fluid" src="img/i46.jpg">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
+      <img class="img-fluid" src="">
+      <br><br>
 
-    <footer class="footer bg-inverse foot">
-      <div class="container-fluid">
-        <div class="row margintopfooter">
-          <div class="col-4"></div>
-          <div class="col-4 alignstuff">
-            <img class="img-fluid alignimage" src="img/Logo1.png" width="140" height="160">
-          </div>
-          <div class="col-4"></div>
+    </div>
+  </div>
+
+
+  <div class="edgewave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1"
+        d="M0,192L80,176C160,160,320,128,480,128C640,128,800,160,960,192C1120,224,1280,256,1360,272L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+
+  <footer class="footer bg-inverse foot">
+    <div class="container-fluid">
+      <div class="row margintopfooter">
+        <div class="col-4"></div>
+        <div class="col-4 alignstuff">
+          <img class="img-fluid alignimage" src="img/Logo1.png" width="140" height="160">
         </div>
-        <div class="row marginiconsfooter">
-          <div class="col-4"></div>
-          <div class="col-4 alignstuff">
-            <a href="https://www.facebook.com/tgbarchstudio">
-              <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i> </a>
-            <a href="https://www.instagram.com/tgbarchstudio/">
-              <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="https://wa.link/o279ek">
-              <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured">
-              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
-          </div>
-          <div class="col-4"></div>
-          <p class="marginbotfooter" style="color: black">Copyright &copy; TGBArchStudio</p>
-        </div>
+        <div class="col-4"></div>
       </div>
-    </footer>
-    <script>    //Changing color of navbar
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 0) {
-          document.getElementById("topnav").style.backgroundColor = "white";
-          document.getElementById("logo").style.display = "none";
-          document.getElementById("logocover").style.display = "block";
-          document.getElementById("topnav").style.boxShadow = "0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19)";
-          document.getElementById("navcolor").style.color = "black";
-          document.getElementById("topnav").style.padding = "0px 20px";
-          document.getElementById("padnav2").style.marginTop = "0px";
-          document.getElementById("right2").style.marginTop = "6px";
-          document.getElementById("dropdown2").style.paddingTop = "15px";
-        } else {
-          document.getElementById("topnav").style.backgroundColor = "transparent";
-          document.getElementById("logo").style.display = "block";
-          document.getElementById("logocover").style.display = "none";
-          document.getElementById("topnav").style.boxShadow = "none";
-          document.getElementById("navcolor").style.color = "white";
-          document.getElementById("topnav").style.padding = "10px 20px";
-          document.getElementById("padnav2").style.marginTop = "10px";
-          document.getElementById("right2").style.marginTop = "10px";
-        }
-      });
-    </script>
-    <script type="text/javascript" src="javascript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script>
-      var preloader = document.getElementById('loading');
-      function pageloaded() {
-        preloader.style.display = 'none';
-      }
+      <div class="row marginiconsfooter">
+        <div class="col-4"></div>
+        <div class="col-4 alignstuff">
+          <a href="https://www.facebook.com/tgbarchstudio">
+            <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i> </a>
+          <a href="https://www.instagram.com/tgbarchstudio/">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a href="https://wa.link/o279ek">
+            <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured">
+            <i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-4"></div>
+        <p class="marginbotfooter" style="color: black">Copyright &copy; TGBArchStudio</p>
+      </div>
+    </div>
+  </footer>
 
-    </script>
+  <script type="text/javascript" src="javascript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script>
+    var preloader = document.getElementById('loading');
+    function pageloaded() {
+      preloader.style.display = 'none';
+    }
+
+  </script>
 </body>
 
 </html>
