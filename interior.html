@@ -53,11 +53,12 @@
         </li>
         <div class="right" id="right2">
           <div id="responsiveSideNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: white;">&times;</a>
+            <a href="javascript:void(0)" class="navtext closebtn" onclick="closeNav()"
+              style="text-decoration: none;">&times;</a>
             <div class="overlay-content">
-              <a href="./about.html" style="color: white;">About</a>
-              <a href="./services.html" style="color: white;">Services</a>
-              <a href="./contact.html" style="color: white;">Contact</a>
+              <a href="./about.html" class="navtext" style="text-decoration: none;">About</a>
+              <a href="./services.html" class="navtext" style="text-decoration: none;">Services</a>
+              <a href="./contact.html" class="navtext" style="text-decoration: none;">Contact</a>
             </div>
           </div>
           <span style="font-size:30px;cursor:pointer; color: black;" onclick="openNav()">&#9776;</span>
@@ -69,6 +70,7 @@
       </div>
     </ul>
   </nav>
+
 
   <script>
     function closeNav() {

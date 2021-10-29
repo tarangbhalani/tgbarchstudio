@@ -120,7 +120,7 @@ nav {
   z-index: 1;
   overflow: hidden;
   background-color: transparent;
-  transition: 0.6s;
+  transition: 0.5s;
   text-decoration: none;
 }
 
@@ -194,7 +194,7 @@ nav {
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.88);
+  background-color: rgba(0,0,0, 0.94);
   overflow-x: hidden;
   transition:  0.7s ;
 }
