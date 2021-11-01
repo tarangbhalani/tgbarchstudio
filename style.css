@@ -101,10 +101,11 @@ td {
   width: 100%;
   height: 100vh;
   z-index: -2;
+  background-color: rgba(58, 117, 117, 1);
   opacity: 1;
 }
 .background::after {
-  background-color: rgb(185, 154, 12);
+  background-color: rgba(58, 117, 117, 1);
   content: '';
   display: block;
   position: absolute;
@@ -120,7 +121,7 @@ nav {
   z-index: 1;
   overflow: hidden;
   background-color: transparent;
-  transition: 0.5s;
+  transition: 0.05s;
   text-decoration: none;
 }
 
@@ -193,8 +194,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.94);
+  background-color: rgba(41, 82, 82, 0.99);
   overflow-x: hidden;
   transition:  0.7s ;
 }
@@ -210,7 +210,7 @@ nav {
 .navtext {
   padding: 8px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 60px;
   color: #cacaca;
   display: block;
   transition: 0.3s;
@@ -231,7 +231,7 @@ nav {
   color: white;
 }
 .workdone {
-  font-size: 21px;
+  font-size: 25px;
   align-content: center;
   text-align: center;
   margin-bottom: 5%;
@@ -332,6 +332,12 @@ ul.top li {
   align-content: center;
   margin-top: 70px;
   margin-bottom: 100px;
+  color: black;
+  font-size: 45px;
+}
+.threeimageanchors {
+  color: black;
+  font-size: 23px;
 }
 
 .rowmargin {
@@ -340,6 +346,7 @@ ul.top li {
 }
 .colpadding {
   text-align: center;
+  margin-bottom: 100px;
 }
 .imgpad {
   width: 100%;
@@ -370,23 +377,29 @@ ul.top li {
   padding-top: 150px;
   text-align: center;
   margin-bottom: 0px;
+  font-size: 25px;
 }
 .offerings {
   text-align: center;
   align-content: center;
-  margin-top: 65px;
+  margin-top: 40px;
   margin-bottom: 150px;
+  font-size: 45px;
+  font-weight: bold;
 }
 .reviews {
   padding-top: 50px;
   text-align: center;
   margin-bottom: 150px;
+  font-size: 45px;
 }
 .twocoltext {
   margin-bottom: 20px;
 }
 .mobilecoltext {
   text-align: justify;
+  color: rgb(218, 216, 216);
+  font-size: 23px;
 }
 .lastcoltext {
   margin-bottom: 200px;
@@ -396,7 +409,7 @@ ul.top li {
   color: black;
 }
 .backgroundcolorchange{
-  background-color:  rgb(178,190, 181, 0.6);
+  background-color:  rgba(58, 117, 117, 1);
 }
 .carousel {
   padding-bottom: 20px;
@@ -447,7 +460,7 @@ ul.top li {
   height: 40px;
 }
 .foot {
-  background-color: rgba(16, 67, 87, 0.3);
+  background-color: rgba(58, 117, 117, 1);
   /*background: -webkit-linear-gradient(grey,black);*/
 }
 
@@ -570,7 +583,7 @@ ul.top li {
   .navtext {
     padding: 8px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     color: #cacaca;
     display: block;
     transition: 0.3s;
@@ -593,6 +606,11 @@ ul.top li {
     margin-left: 30px;
     margin-right: 30px;
   }
+  .colpadding{
+    margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .right {
     float: right;
     padding-top: 8px;
@@ -609,6 +627,12 @@ ul.top li {
     padding-left: 0%;
     max-width: 100%;
   }
+  .threeimages{
+    font-size: 35px;
+  }
+  .threeimageanchors{
+    font-size:20px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .servicespadding {
@@ -617,16 +641,16 @@ ul.top li {
 }
 
 .fa-facebook-square {
-  color: white;
+  color: rgb(218, 216, 216);
 }
 .fa-instagram {
-  color: white;
+  color: rgb(218, 216, 216);
 }
 .fa-whatsapp {
-  color: white;
+  color: orange;
 }
 .fa-youtube {
-  color: white;
+  color: rgb(218, 216, 216);
 }
 
 .fa-google {
@@ -642,7 +666,7 @@ ul.top li {
   color: red;
 }
 .fa-whatsapp:hover {
-  color: green;
+  color: lightgreen;
 }
 
 .fa-youtube:hover {
