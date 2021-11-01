@@ -150,7 +150,7 @@ nav {
 }*/
 
 .header {
-  padding-top: 190px;
+  padding-top: 40px;
   font-size: 68px;
   text-align: center;
   color: white;
@@ -172,7 +172,7 @@ nav {
   color: rgb(253, 253, 253);
   z-index: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .tgb b span {
   position: relative;
@@ -574,6 +574,12 @@ ul.top li {
     color: #cacaca;
     display: block;
     transition: 0.3s;
+  }
+  .tgb{
+    font-size: 0px;
+  }
+  .workdone{
+    font-size: 0px;
   }
   .overlay a:hover, .overlay a:focus {   /*navtext hover*/
     color: orange;
