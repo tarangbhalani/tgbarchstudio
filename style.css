@@ -82,7 +82,8 @@ td {
 }
 
 .loadtext{
-  text-align: center;
+  text-align: right;
+  margin-right: 30px;
 }
 .background {
   min-width: 100%;
@@ -515,7 +516,11 @@ ul.top li {
 
 @media screen and (max-width: 680px) {
   
-  
+  .loadtext{
+    text-align: center;
+    margin-top: 20vh;
+    margin-right: 0px;
+  }
 
   ul.top li:not(:nth-child(1)) {
     display: none;
@@ -585,10 +590,7 @@ ul.top li {
   }
 }
 @media screen and (max-width: 1000px) {
-  .loadtext{
-    text-align: center;
-    margin-top: 30vh;
-  }
+  
   .navtext {
     padding: 8px;
     text-decoration: none;
