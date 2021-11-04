@@ -28,10 +28,23 @@
 </head>
 
 <body class="allfont" class="background2" onload="pageloaded()">
+  <!--Pre loader-->
+  <!--Preloader for mobile view-->
   <div id="loading">
     <h2 class="loadtext"><b>Loading...</b></h3>
   </div>
-  <!--Pre loader-->
+  <!--Preloader for desktop view-->
+  <div id="gooey">
+    <div class="gooey">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -247,8 +260,10 @@
   <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
   <script>
     var preloader = document.getElementById('loading');
+    var preloader2 = document.getElementById('gooey');
     function pageloaded() {
       preloader.style.display = 'none';
+      preloader2.style.display = 'none';
     }
 
   </script>
