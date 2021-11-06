@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
 
+  <!-- ************SEO optimization ****************-->
+  <link rel="canonical" href="https://tgbarchstudio.com/">
+  <link rel="apple-touch-icon" href="img/Logo1.jpg">
+  <meta name="theme-color" content="#3A7575">
+
   <!-- *****************   Font Awesome favicons ******************-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
     integrity="sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs" crossorigin="anonymous">
@@ -58,14 +63,14 @@
         <ul class="top">
           <li id="logo">
             <a href="./index.html">
-              <img src="img/Logo1.png" width="100" height="100">
+              <img src="img/Logo1.png" alt="Official TGBArchStudio logo" width="100" height="100">
             </a>
           </li>
 
           <div id="navcolor">
             <li id="logocover" style="display: none;">
               <a id="padnav2" href="./index.html">
-                <img class="img-fluid" src="img/1.jpg" width="100" height="40">
+                <img class="img-fluid" src="img/1.jpg" alt="Official Secondary logo" width="100" height="40">
               </a>
             </li>
             <div class="right" id="right2">
@@ -102,22 +107,13 @@
 
       <script>    //Changing color of navbar
         window.addEventListener("scroll", function () {
-          if (window.pageYOffset > 0) {
-            document.getElementById("topnav").style.backgroundColor = "rgba(255, 255, 255, 0.98)";
-            document.getElementById("logo").style.display = "none";
-            document.getElementById("logocover").style.paddingTop = "10px";
-            document.getElementById("logocover").style.paddingLeft = "30px";
-            document.getElementById("logocover").style.display = "block";
-            document.getElementById("topnav").style.boxShadow = "0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19)";
-            document.getElementById("navcolor").style.color = "black";
-            document.getElementById("padnav2").style.marginTop = "0px";
+          if (window.pageYOffset > 200) {
+
+            document.getElementById("logo").style.opacity = '0.8';
+
           } else {
-            document.getElementById("topnav").style.backgroundColor = "transparent";
             document.getElementById("logo").style.display = "block";
-            document.getElementById("logocover").style.paddingTop = " 0px";
-            document.getElementById("logocover").style.display = "none";
-            document.getElementById("topnav").style.boxShadow = "none";
-            document.getElementById("navcolor").style.color = "white";
+            document.getElementById("logo").style.opacity = '1';
           }
         });
       </script>
@@ -143,7 +139,7 @@
 
   <div class="background2">
     <div>
-      <h5 class="authentic" style="color: rgb(95, 95, 95);"><b>Authentic and modern</b></h5>
+      <h3 class="authentic" style="color: rgb(95, 95, 95);"><b>Authentic and modern</b></h3>
     </div>
     <div>
       <h2 class="threeimages"> Our sample of 3D Images </h2>
@@ -193,7 +189,7 @@
     <div class="background3">
       <div class="backgroundcolorchange">
         <div>
-          <h5 class="whyus" style="color: rgb(218, 216, 216)"><b>Why Us?</b></h5>
+          <h4 class="whyus" style="color: rgb(218, 216, 216)"><b>Why Us?</b></h4>
         </div>
         <div>
           <h2 class="offerings" style="color: orange"> Our Offerings </h2>
@@ -205,12 +201,12 @@
           <div class="col-sm-1">
           </div>
           <div class="col-sm-5  onecoltext">
-            <h5 class="mobilecoltext">At TGBArchStudio, we always use architecture softwares, hence the work done is
+            <h3 class="mobilecoltext">At TGBArchStudio, we always use architecture softwares, hence the work done is
               precise at mm levels. So, the final image can actually be imported in your field of work.</h5>
           </div>
           <div class="col-sm-1"></div>
           <div class="col-sm-4">
-            <h5 class="mobilecoltext">We Use high quality, good texture and from your demand we can also provide you
+            <h3 class="mobilecoltext">We Use high quality, good texture and from your demand we can also provide you
               texture images along with final image. </h5>
           </div>
           <div class="col-sm-1"></div>
@@ -219,13 +215,13 @@
           <div class="col-sm-1">
           </div>
           <div class="col-sm-5 onecoltext">
-            <h5 class="mobilecoltext">Work included : Modelling -> Material applying -> Rendering -> Post Production ->
+            <h3 class="mobilecoltext">Work included : Modelling -> Material applying -> Rendering -> Post Production ->
               minor changes.</h5>
           </div>
           <div class="col-sm-1"></div>
           <div class="col-sm-4">
-            <h5 class="mobilecoltext">We do not use readymade furniture but we create it according to space available.
-            </h5>
+            <h3 class="mobilecoltext">We do not use readymade furniture but we create it according to space available.
+              </h5>
           </div>
           <div class="col-sm-1"></div>
         </div>
@@ -233,11 +229,11 @@
           <div class="col-sm-1">
           </div>
           <div class="col-sm-5 onecoltext">
-            <h5 class="mobilecoltext">We provide upto 5 UHD images in one package.</h5>
+            <h3 class="mobilecoltext">We provide upto 5 UHD images in one package.</h5>
           </div>
           <div class="col-sm-1"></div>
           <div class="col-sm-4">
-            <h5 class="mobilecoltext" style="padding-bottom: 200px;">No extra payment for minor changes. </h5>
+            <h3 class="mobilecoltext" style="padding-bottom: 200px;">No extra payment for minor changes. </h5>
           </div>
           <div class="col-sm-1"></div>
         </div>
@@ -323,20 +319,22 @@
         <div class="row margintopfooter">
           <div class="col-4"></div>
           <div class="col-4 alignstuff">
-            <img class="img-fluid alignimage" src="img/Logo1.png" width="140" height="160">
+            <img class="img-fluid alignimage" src="img/Logo1.png" alt="official TGBArchStudio logo" width="140"
+              height="160">
           </div>
           <div class="col-4"></div>
         </div>
         <div class="row marginiconsfooter">
           <div class="col-4"></div>
           <div class="col-4 alignstuff">
-            <a href="https://www.facebook.com/tgbarchstudio">
+            <a href="https://www.facebook.com/tgbarchstudio" alt="Contact TGBArchStudio on facebook">
               <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i> </a>
-            <a href="https://www.instagram.com/tgbarchstudio/">
+            <a href="https://www.instagram.com/tgbarchstudio/" alt="Contact TGBArchStudio on instagram">
               <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="https://wa.link/o279ek">
+            <a href="https://wa.link/o279ek" alt="Contact TGBArchStudio on whatsapp">
               <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured">
+            <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured"
+              alt="TGBArchStudio official youtube page">
               <i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
           </div>
           <div class="col-4"></div>
