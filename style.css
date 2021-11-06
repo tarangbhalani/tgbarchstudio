@@ -587,6 +587,7 @@ ul.top li {
     margin-left: 5px;
     margin-top: 20vh;
     margin-right: 0px;
+    font-size: 25px;
   }
 
   ul.top li:not(:nth-child(1)) {
