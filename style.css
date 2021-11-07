@@ -547,10 +547,13 @@ ul.top li {
   margin-right: 10px;
 }
 .aboutfont {
-  font-size: 30px;
+  font-size: 23px;
   padding-bottom: 100px;
 }
 
+.aboutfontsize{
+  font-size: 23px;
+}
 /*Services CSS*/
 .servicesheading {
   padding-top: 200px;
@@ -558,6 +561,10 @@ ul.top li {
 }
 .servicespadding {
   padding-left: 300px;
+}
+
+.servicesfont{
+  font-size: 23px;
 }
 
 .contactheading {
