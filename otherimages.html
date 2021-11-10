@@ -91,30 +91,7 @@
         </ul>
     </nav>
 
-    <script>
-        function closeNav() {
-            document.getElementById("responsiveSideNav").style.width = "0%";
-        }
-        function openNav() {
-            document.getElementById("responsiveSideNav").style.width = "100%";
-        }
 
-
-    </script>
-
-
-    <script>    //Changing color of navbar
-        window.addEventListener("scroll", function () {
-            if (window.pageYOffset > 200) {
-
-                document.getElementById("logo").style.opacity = '0.8';
-
-            } else {
-                document.getElementById("logo").style.display = "block";
-                document.getElementById("logo").style.opacity = '1';
-            }
-        });
-    </script>
     <!--********************************************   Navigation Bar End ****************************************-->
 
 
@@ -162,51 +139,193 @@
 
 
 
-    <footer class="footer bg-inverse foot">
-        <div class="container-fluid">
-            <div class="row margintopfooter">
-                <div class="col-4"></div>
-                <div class="col-4 alignstuff">
-                    <img class="img-fluid alignimage" src="img/Logo1.png" title="Official tgb logo" alt="logo"
-                        width="140" height="160" loading="eager">
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="img/Logo1.png" alt="footer logo" class="img-fluid"
+                                style="max-height: 150px; padding-left: 60px;">
+                        </a>
+                        <p class="footer-info-text">
+                            A new stride in Photorealistic 3D Architectural rendering with real world quality.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/tgbarchstudio"
+                                        alt="Contact TGBArchStudio on facebook">
+                                        <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i> </a>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.link/o279ek" alt="Contact TGBArchStudio on whatsapp">
+                                        <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured"
+                                        alt="TGBArchStudio official youtube page">
+                                        <i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/tgbarchstudio/"
+                                        alt="Contact TGBArchStudio on instagram">
+                                        <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+
                 </div>
-                <div class="col-4"></div>
-            </div>
-            <div class="row marginiconsfooter">
-                <div class="col-4"></div>
-                <div class="col-4 alignstuff">
-                    <a href="https://www.facebook.com/tgbarchstudio">
-                        <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i> </a>
-                    <a href="https://www.instagram.com/tgbarchstudio/">
-                        <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://wa.link/o279ek">
-                        <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured">
-                        <i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Amreli India</h3>
+                                    <p>15 Madhuvan park</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>9712348946</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="./about.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="./services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="./exterior.html">Exterior Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="./interior.html">Interior Portfolio</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="./contact.html">Contact us</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Mail Us</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p>
+                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                    TGBArchStudio provides the best detailing with least expense.
+                                </p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
                 </div>
-                <div class="col-4"></div>
-                <p class="marginbotfooter" style="color: rgb(218, 216, 216)">Copyright &copy; TGBArchStudio</p>
+                <!-- End Col -->
             </div>
+            <!-- End Widget Row -->
         </div>
+        <!-- End Contact Container -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2019, All Right Reserved TGBArchStudio</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button onclick="topfunction()" class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        <!-- End Back to top -->
     </footer>
 
-    <script type="text/javascript" src="javascript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script>
-        var preloader = document.getElementById('loading');
-        var preloader2 = document.getElementById('gooey');
-        function pageloaded() {
-            preloader.style.display = 'none';
-            preloader2.style.display = 'none';
-        }
-
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
