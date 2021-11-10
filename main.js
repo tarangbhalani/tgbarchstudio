@@ -1,8 +1,6 @@
-var preloader = document.getElementById('loading');
-    var preloader2 = document.getElementById('gooey');
+var preloader = document.getElementById('gooey');
     function pageloaded() {
       preloader.style.display = 'none';
-      preloader2.style.display = 'none';
     };
 
     function closeNav() {
