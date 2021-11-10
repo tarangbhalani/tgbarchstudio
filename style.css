@@ -1,14 +1,4 @@
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
-#loading {
-  position: fixed; /*Preloader will always be in a fixed position*/
-  width: 100%;
-  height: 100vh;
-  background: rgba(255, 255, 255, 1) url('istanbul_anim1-2_2048.gif') no-repeat center; /*No-repeat allows only one instance of the animation, center will centralize the preloader*/
-  background-position: bottom;
-  background-size: contain;
-  z-index: 99999; /*keep the z-index to the highest value*/
-  display: none;
-}
 
 #gooey{
   position: fixed;
@@ -167,11 +157,11 @@ td {
   width: 100%;
   height: 100vh;
   z-index: -2;
-  background-color: rgba(58, 117, 117, 0.2);
+  background-color: rgba(58, 117, 117, 0);
   opacity: 1;
 }
 .background::after {
-  background-color: rgba(58, 117, 117, 0.2);
+  background-color: rgba(58, 117, 117, 0);
   content: '';
   display: block;
   position: absolute;
@@ -956,12 +946,6 @@ p {
 /*-----------------------------Mobile View-----------------------------*/
 
 @media screen and (max-width: 770px) {
-  #loading{
-    display: block;
-  }
-  #gooey{
-    display: none;
-  }
   
   .loadtext{
     text-align: center;
