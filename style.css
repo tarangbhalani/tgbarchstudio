@@ -58,6 +58,19 @@
 }
 
 
+.reveal{   /*Animation created from javascript on scroll*/
+  position: relative;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: all 1s ease;
+
+}
+ .activesection{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
 nav,
 header,
 footer {

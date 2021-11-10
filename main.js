@@ -40,3 +40,20 @@ var preloader = document.getElementById('gooey');
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+      var reveals= document.querySelectorAll('.reveal');
+      for (var i=0; i<reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('activesection');
+        }
+        else{
+          reveals[i].classList.remove('activesection');
+        }
+      }
+    }
