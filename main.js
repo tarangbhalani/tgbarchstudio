@@ -61,10 +61,31 @@ var preloader = document.getElementById('gooey');
     }
 
     /* ----------------------Passive smooth scroll javascript ----------------------------------- */
-    document.addEventListener('touchstart', onTouchStart, {passive: true});
-    document.addEventListener('wheel', onscroll(), {passive: true});
+    document.addEventListener('wheel', (evt) => {
+      // ... do stuff with evt
+    }, {
+      capture: true,
+      passive: true
+    })
 
-
+    document.addEventListener('touchstart', (evt) => {
+      // ... do stuff with evt
+    }, {
+      capture: true,
+      passive: true
+    })
+    document.addEventListener('touchmove', (evt) => {
+      // ... do stuff with evt
+    }, {
+      capture: true,
+      passive: true
+    })
+    document.addEventListener('mousewheel', (evt) => {
+      // ... do stuff with evt
+    }, {
+      capture: true,
+      passive: true
+    })
 
 
 
