@@ -1,3 +1,4 @@
+/* -----------------------Navigation Bar------------------------------ */
 var preloader = document.getElementById('gooey');
     function pageloaded() {
       preloader.style.display = 'none';
@@ -20,7 +21,7 @@ var preloader = document.getElementById('gooey');
       }
     })
 
-
+    /* Back to top fixed button in the website */
 
     mybutton = document.getElementById("back-to-top");
 
@@ -42,6 +43,7 @@ var preloader = document.getElementById('gooey');
     }
 
 
+    /*---------------Reveal animation-------------------------------- */
     window.addEventListener('scroll', reveal);
     function reveal() {
       var reveals= document.querySelectorAll('.reveal');
@@ -57,3 +59,12 @@ var preloader = document.getElementById('gooey');
         }
       }
     }
+
+    /* ----------------------Passive smooth scroll javascript ----------------------------------- */
+    document.addEventListener('touchstart', onTouchStart, {passive: true});
+    document.addEventListener('wheel', onscroll(), {passive: true});
+
+
+
+
+
