@@ -1010,8 +1010,10 @@ p {
     margin-bottom: 70px;
   }
   .mobilecoltext {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+    font-size: 15px;
   }
   .contactmaps {
     margin-top: 100px;
