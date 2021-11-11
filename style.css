@@ -1037,23 +1037,7 @@ p {
   .reviews {
     margin-bottom: 100px;
   }
-  .dk-footer .contact-icon i{
-    display: none;
-  }
-  .contact-info{
-    display: none;
-  }
-  .animate-border{
-    display: none;
-  }
-  .copyright{
-    font-size: 13px;
-    
-  }
-  .copyright-menu ul{
-    text-align: left;
-    padding-top: 30px;
-  }
+  
 }
 @media screen and (max-width: 1000px) {
   
@@ -1109,6 +1093,23 @@ p {
   }
   .threeimageanchors{
     font-size:20px;
+  }
+  .dk-footer .contact-icon i{
+    display: none;
+  }
+  .contact-info{
+    display: none;
+  }
+  .animate-border{
+    display: none;
+  }
+  .copyright{
+    font-size: 13px;
+    
+  }
+  .copyright-menu ul{
+    text-align: left;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 1400px) {
