@@ -506,7 +506,9 @@ ul.top li {
 }
 
 
-
+.maxsize{
+  max-height: 90vh;
+}
 
 
 
