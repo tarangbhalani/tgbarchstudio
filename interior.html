@@ -36,7 +36,7 @@
 
 
 
-<body class="allfont" class="background2" onload="pageloaded()">
+<body class="allfont pagescroll" class="background2" onload="pageloaded()">
 
   <!--Pre loader-->
   <div id="gooey">
@@ -106,19 +106,19 @@
   <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
     <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
 
-      <img class="img-fluid maxsize" src="img/i78.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i78.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i65.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i65.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i76.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i76.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i74.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i74.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i69.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i69.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
       <img class="img-fluid maxsize" src="img/i39.jpg" width="auto" height="auto" loading="lazy" title="Top class"
@@ -166,19 +166,19 @@
     </div>
 
     <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
-      <img class="img-fluid maxsize" src="img/i80.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i80.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i77.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i77.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i75.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i75.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i70.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i70.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i68.jpg " width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i68.jpg " width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
       <img class="img-fluid maxsize" src="img/ir54.jpg" width="auto" height="auto" loading="lazy" title="Top class"
@@ -224,6 +224,14 @@
       <img class="img-fluid maxsize" src="">
       <br><br>
 
+    </div>
+
+    <!-------------------------------Creating Image modal-------------------------------->
+    <div id="myModal" class="modal">
+      <img class="modal-content img-fluid" id="img01">
+      <a href="javascript:void(0)" class="closemodal" style="text-decoration: none;"
+        onclick="closeGallery()">&times;</a>
+      <!--Without javascript void 0, button will not work properly-->
     </div>
   </div>
 

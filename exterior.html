@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="allfont" class="background2" onload="pageloaded()">
+<body class="allfont pagescroll" class="background2" onload="pageloaded()">
   <!--Pre loader-->
 
   <div id="gooey">
@@ -104,98 +104,108 @@
 
 
 
-  <div>
-    <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
-      <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
 
-        <img class="img-fluid maxsize" src="img/i195.webp" width="auto" height="auto" loading="lazy"
-          title="Extraordinary detailed exterior" alt="Extraordinary detailed exterior">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i110.webp" width="auto" height="auto" loading="lazy"
-          title="Real estate design" alt="Real estate design">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i91.webp" width="auto" height="auto" loading="lazy"
-          title="TGBArchstudio has best quality images" alt="TGBArchstudio has best quality images">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i87.jpg" width="auto" height="auto" loading="lazy"
-          title="Perfect colors" alt="Perfect colors">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i84.jpg" width="auto" height="auto" loading="lazy"
-          title="Cladding is great" alt="Cladding is great">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e5.jpg" width="auto" height="auto" loading="lazy"
-          title="Parapet is beautiful" alt="Parapet is beautiful">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i89.jpg" width="auto" height="auto" loading="lazy"
-          title="Best aesthetics" alt="Best aesthetics">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i82.jpg" width="auto" height="auto" loading="lazy"
-          title="Good taste of objects and models" alt="Good taste of objects and models">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e5.jpg" width="auto" height="auto" loading="lazy"
-          title="Great detailed landscape" alt="Great detailed landscape">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e3.jpg" width="auto" height="auto" loading="lazy" title="Top class"
-          alt="Top class">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e6.jpg" width="auto" height="auto" loading="lazy" title="Fantabulous"
-          alt="Fantabulous">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e11.jpg" width="auto" height="auto" loading="lazy"
-          title="Beauty at its best" alt="Beauty at its best">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e16.jpg" width="auto" height="auto" loading="lazy" title="Trust"
-          alt="Trust">
-        <br><br>
+  <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
+    <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
 
+      <img class="img-fluid maxsize" id="maxsize" src="img/i195.webp" width="auto" height="auto" loading="eager"
+        title="Extraordinary detailed exterior" alt="Extraordinary detailed exterior">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i110.webp" width="auto" height="auto" loading="eager"
+        title="Real estate design" alt="Real estate design">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i91.webp" width="auto" height="auto" loading="eager"
+        title="TGBArchstudio has best quality images" alt="TGBArchstudio has best quality images">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i87.jpg" width="auto" height="auto" loading="eager"
+        title="Perfect colors" alt="Perfect colors">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i84.jpg" width="auto" height="auto" loading="eager"
+        title="Cladding is great" alt="Cladding is great">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="" width="auto" height="auto" loading="lazy"
+        title="Parapet is beautiful" alt="Parapet is beautiful">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i89.jpg" width="auto" height="auto" loading="lazy"
+        title="Best aesthetics" alt="Best aesthetics">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i82.jpg" width="auto" height="auto" loading="lazy"
+        title="Good taste of objects and models" alt="Good taste of objects and models">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e5.jpg" width="auto" height="auto" loading="lazy"
+        title="Great detailed landscape" alt="Great detailed landscape">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e3.jpg" width="auto" height="auto" loading="lazy"
+        title="Top class" alt="Top class">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e6.jpg" width="auto" height="auto" loading="lazy"
+        title="Fantabulous" alt="Fantabulous">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e11.jpg" width="auto" height="auto" loading="lazy"
+        title="Beauty at its best" alt="Beauty at its best">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e16.jpg" width="auto" height="auto" loading="lazy"
+        title="Trust" alt="Trust">
+      <br><br>
 
-      </div>
-
-      <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
-        <img class="img-fluid maxsize" src="img/i148.webp" width="auto" height="auto" loading="lazy"
-          title="Extraordinary detailed exterior" alt="Extraordinary detailed exterior">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i146.webp" width="auto" height="auto" loading="lazy"
-          title="Real estate design" alt="Real estate design">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i123.webp" width="auto" height="auto" loading="lazy"
-          title="TGBArchstudio has best quality images" alt="TGBArchstudio has best quality images">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i90.webp" width="auto" height="auto" loading="lazy"
-          title="Perfect colors" alt="Perfect colors">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i112.webp" width="auto" height="auto" loading="lazy"
-          title="Cladding is great" alt="Cladding is great">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i88.jpg" width="auto" height="auto" loading="lazy"
-          title="Parapet is beautiful" alt="Parapet is beautiful">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i91.jpg" width="auto" height="auto" loading="lazy"
-          title="Best aesthetics" alt="Best aesthetics">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i90.jpg" width="auto" height="auto" loading="lazy"
-          title="Good taste of objects and models" alt="Good taste of objects and models">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i60.jpg" width="auto" height="auto" loading="lazy"
-          title="Great detailed landscape" alt="Great detailed landscape">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/i81.jpg" width="auto" height="auto" loading="lazy" title="Top class"
-          alt="Top class">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e2.jpg" width="auto" height="auto" loading="lazy" title="Fantabulous"
-          alt="Fantabulous">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e7.jpg" width="auto" height="auto" loading="lazy"
-          title="Beauty at its best" alt="Beauty at its best">
-        <br><br>
-        <img class="img-fluid maxsize" src="img/e18.jpg" width="auto" height="auto" loading="lazy" title="Trust"
-          alt="Trust">
-        <br><br>
-
-      </div>
 
     </div>
+
+
+
+    <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
+      <img class="img-fluid maxsize" id="maxsize" src="img/i148.jpg" width="auto" height="auto" loading="lazy"
+        title="Extraordinary detailed exterior" alt="Extraordinary detailed exterior">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i146.webp" width="auto" height="auto" loading="eager"
+        title="Real estate design" alt="Real estate design">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i123.webp" width="auto" height="auto" loading="eager"
+        title="TGBArchstudio has best quality images" alt="TGBArchstudio has best quality images">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i90.webp" width="auto" height="auto" loading="eager"
+        title="Perfect colors" alt="Perfect colors">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i112.webp" width="auto" height="auto" loading="eager"
+        title="Cladding is great" alt="Cladding is great">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i88.jpg" width="auto" height="auto" loading="eager"
+        title="Parapet is beautiful" alt="Parapet is beautiful">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i91.jpg" width="auto" height="auto" loading="lazy"
+        title="Best aesthetics" alt="Best aesthetics">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i90.jpg" width="auto" height="auto" loading="lazy"
+        title="Good taste of objects and models" alt="Good taste of objects and models">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i60.jpg" width="auto" height="auto" loading="lazy"
+        title="Great detailed landscape" alt="Great detailed landscape">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/i81.jpg" width="auto" height="auto" loading="lazy"
+        title="Top class" alt="Top class">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e2.jpg" width="auto" height="auto" loading="lazy"
+        title="Fantabulous" alt="Fantabulous">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e7.jpg" width="auto" height="auto" loading="lazy"
+        title="Beauty at its best" alt="Beauty at its best">
+      <br><br>
+      <img class="img-fluid maxsize" id="maxsize" src="img/e18.jpg" width="auto" height="auto" loading="lazy"
+        title="Trust" alt="Trust">
+      <br><br>
+
+
+    </div>
+
+    <!-------------------------------Creating Image modal-------------------------------->
+    <div id="myModal" class="modal">
+      <img class="modal-content img-fluid" id="img01">
+      <a href="javascript:void(0)" class="closemodal" style="text-decoration: none;"
+        onclick="closeGallery()">&times;</a>
+      <!--Without javascript void 0, button will not work properly-->
+    </div>
   </div>
+
 
 
 
