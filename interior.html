@@ -21,22 +21,21 @@
   <meta name="theme-color" content="#3A7575">
 
   <!-- *****************   Font Awesome favicons ******************-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
-    integrity="sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css"
     integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
     integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+
+  <!--************************Font************************-->
+  <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
 </head>
 
 
 
 
-<body class="allfont" class="background2" onload="pageloaded()">
+<body class="allfont pagescroll" class="background2" onload="pageloaded()">
 
   <!--Pre loader-->
   <div id="gooey">
@@ -106,19 +105,19 @@
   <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
     <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
 
-      <img class="img-fluid maxsize" src="img/i78.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i78.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i65.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i65.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i76.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i76.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i74.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i74.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i69.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i69.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
       <img class="img-fluid maxsize" src="img/i39.jpg" width="auto" height="auto" loading="lazy" title="Top class"
@@ -166,19 +165,19 @@
     </div>
 
     <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
-      <img class="img-fluid maxsize" src="img/i80.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i80.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i77.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i77.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i75.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i75.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i70.jpg" width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i70.jpg" width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
-      <img class="img-fluid maxsize" src="img/i68.jpg " width="auto" height="auto" loading="lazy" title="Top class"
+      <img class="img-fluid maxsize" src="img/i68.jpg " width="auto" height="auto" loading="eager" title="Top class"
         alt="Top class">
       <br><br>
       <img class="img-fluid maxsize" src="img/ir54.jpg" width="auto" height="auto" loading="lazy" title="Top class"
@@ -224,6 +223,14 @@
       <img class="img-fluid maxsize" src="">
       <br><br>
 
+    </div>
+
+    <!-------------------------------Creating Image modal-------------------------------->
+    <div id="myModal" class="modal">
+      <img class="modal-content img-fluid" id="img01">
+      <a href="javascript:void(0)" class="closemodal" style="text-decoration: none;"
+        onclick="closeGallery()">&times;</a>
+      <!--Without javascript void 0, button will not work properly-->
     </div>
   </div>
 
