@@ -902,10 +902,17 @@ p {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: 700;
 }
 .footer-widget a:hover {
   color: rgb(223, 162, 48);
   text-decoration: none;
+}
+.contactfooter{
+  color: rgb(223, 162, 48) !important; 
+}
+.contactfooter:hover{
+  color: white !important;
 }
 
 .footer-widget:after {
