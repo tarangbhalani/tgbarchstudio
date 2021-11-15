@@ -283,6 +283,28 @@ nav {
   display: block;
   transition: 0.3s;
 }
+.overlay-exterior {
+  position: absolute;
+  top: 85%;
+  left: 2%;
+  width: 100%;
+ 
+}
+.overlay-interior {
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  width: 100%;
+
+}
+.navporttext {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #cacaca;
+  display: block;
+  transition: 0.3s;
+}
 
 .overlay a:hover, .overlay a:focus {   /*navtext hover*/
   color: orange;
@@ -1221,6 +1243,12 @@ p {
   .copyright-menu ul{
     text-align: left;
     padding-top: 30px;
+  }
+  .overlay-exterior{
+    display: none;
+  }
+  .overlay-interior{
+    display: none;
   }
 }
 @media screen and (max-width: 1400px) {
