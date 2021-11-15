@@ -1,0 +1,157 @@
+
+.card1 {
+  background: url("./img/tmp/future_past_by_darekzabrocki_dd08i99.jpg");
+}
+
+.card2 {
+  background: url("./img/tmp/carl_s_bedroom___detroit__become_human_by_wojtekfus_dcd59rq.jpg");
+}
+.card3{
+  background: url("./img/tmp/halfetti___i_by_inayatshah_deugys2.jpg");
+}
+.card4{
+  background: url("./img/tmp/floor_plan_rendering_by_talens3d_db6263v.png");
+}
+.card5{
+  background: url("./img/tmp/egyptian_elements_materials_pack__img_4__by_andrey79_deu4owk.jpg");
+}
+.card6{
+  background: url("./img/tmp/architecture_on_the_rhein_by_rikitza_detkrbu.jpg");
+}
+
+
+
+
+.movie_card {
+  font-size: 15px;
+  position: relative;
+  display: block;
+  width: 1200px; /*Width of card*/
+  height: 300px; /*Height of card*/
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 120px;
+  overflow: hidden;
+  border-radius: 10px; /*Rounded corners*/
+  transition: all 0.6s;
+  box-shadow: 0px 0px 100px -15px rgba(58, 117, 117, 0.4);
+}
+
+  .movie_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 70px -15px rgba(58, 117, 117, 0.4);
+    transition: all 0.6s;
+  }
+  .cardright{
+    margin-left: 15%;
+  }
+  .info_section {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-blend-mode: multiply; /*The property of how backkground blends with the foreground*/
+    z-index: 2;
+    border-radius: 10px;
+}
+    .info_section .movie_header {
+      position: relative;
+      padding: 25px;
+      height: 55%; /*height of info section*/
+   
+    }
+      .movie_header h1 {
+        color: black;
+        font-weight: 500;
+        font-size: 35px;
+      }
+      .movie_header h2 {
+        color: rgb(95, 95, 95);
+        font-size: 25px;
+        font-weight: 500;
+      }
+      
+      .movie_header .type {  /*low opacity font*/
+        display: inline-block;
+        color: #959595;
+        
+        margin-top: 8px;
+      }
+      
+    .movie_desc {
+      padding: 25px;
+      height: 50%; /*height of text section*/
+    }
+    .movie_desc .text {
+        color: #545454;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    
+    
+        
+      
+    
+  .blur_back {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    background-size: cover;
+    border-radius: 11px;
+  }
+
+
+@media screen and (min-width: 768px) {
+  .movie_header {
+    width: 65%;
+  }
+
+  .movie_desc {
+    width: 50%;
+  }
+
+  .info_section {
+    background: linear-gradient(to right, #e5e6e6 50%, transparent 100%);
+  }
+
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_card {
+    width: 95%;
+    margin: 70px auto;
+    min-height: 350px;
+    height: auto;
+  }
+
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+
+  .movie_header {
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .movie_desc {
+    width: 100%;
+  }
+
+  .info_section {
+    background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+
+
+
+
+
+

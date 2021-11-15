@@ -85,6 +85,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth !important;
+  text-decoration: none !important;
 }
 
 fieldset,
@@ -118,7 +119,8 @@ td {
   padding: 0;
 }
 .allfont {
-  font-family: 'Times New Roman', Times, serif;
+  /*font-family: 'Times New Roman', Times, serif;*/
+  font-family: "Baloo 2";
 }
 
 .content {
@@ -385,9 +387,6 @@ ul.top li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.background2 {
-  background-color: white; /*Old color- #DCAE96*/
-}
 
 .authentic {
   padding-top: 250px;
@@ -483,6 +482,7 @@ ul.top li {
 .backgroundcolorchange{
   background-color:  rgba(58, 117, 117, 1);
   background-attachment: scroll;
+  border-radius: 5px;
 }
 .carousel {
   padding-bottom: 20px;
@@ -604,7 +604,7 @@ ul.top li {
 }
 .abouttgb:hover {
   text-decoration: none;
-  color: purple;
+  color: rgb(231, 136, 19);
 }
 .abouttext {
   margin-right: 10px;
@@ -620,9 +620,23 @@ ul.top li {
 }
 /*Services CSS*/
 .servicesheading {
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 100px;
+  margin-bottom: 100px;
 }
+.services {
+  font-size: 45px;
+  text-decoration: none;
+  color: black;
+}
+.services:hover {
+  text-decoration: none;
+  color: rgb(231, 136, 19);
+}
+
 .servicespadding {
   padding-left: 300px;
 }
@@ -1031,8 +1045,8 @@ p {
 }
 .back-to-top .btn-dark:hover {
   cursor: pointer;
-  background: #fa6742;
-  border-color: #fa6742;
+  background: orange;
+  border-color: orange;
 }
 /*-------------------------End of Footer-------------------------------*/
 

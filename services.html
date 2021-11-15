@@ -11,6 +11,8 @@
 
   <!--   **** Linking css file ****   -->
   <link rel="stylesheet" href="style.css">
+  <!--Only css for cards is in below css file-->
+  <link rel="stylesheet" href="servicestyle.css">
   <link rel="icon" href="img/Logo1.png" type="image/icon type">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
@@ -28,9 +30,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
     integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--************************Font************************-->
+  <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
 </head>
 
-<body class="allfont background2 pagescroll">
+<body class="allfont pagescroll">
 
   <nav style="padding-bottom: 10px;" id="topnav">
     <ul class="top">
@@ -68,61 +73,187 @@
 
 
   <div class="servicesheading">
-    <h1 style="text-align: center; color: white;"><a href="./services.html" class="abouttgb">Services</a></h1>
+    <h1><a href="./services.html" class="services"><b>Services</b></a></h1>
   </div>
 
-  <div class="row">
-    <div class="col-3"></div>
-    <div class="col-9">
-      <div class="servicespadding">
-        <ul>
-          <li>
-            <h2 class="servicesfont">3D Architecture</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D Architecture Walkthroughs</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D Floor plan/Isometric view</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D Section view</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D interior</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D Site plan for brochure/Aerial view</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D 360 Degree VR view</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">3D Landscape design</h2>
-          </li>
-          <li>
-            <h2 class="servicesfont">2D Planning</h2>
-          </li>
-        </ul>
+
+
+  <!--********************************** Card 1 *****************************************-->
+  <div class="cardcontainer">
+    <div class="movie_card" id="tomb">
+
+      <div class="info_section">
+        <div class="movie_header">
+
+          <h1>3D Architecture</h1>
+          <h2>Fundamentals and Advanced</h2>
+          <p class="type">Accurate depiction of a project</p>
+        </div>
+        <div class="movie_desc">
+          <h3 class="text">
+            These models can be much more informative than 2D models, as they can show viewers the texture, shape, and
+            size of potential buildings.
+          </h3>
+        </div>
+
       </div>
+
+      <div class="blur_back card1"></div>
     </div>
   </div>
 
-  <br>
-  <br>
-  <br>
+  <!--********************************** Card 2 *****************************************-->
 
+  <div class="movie_card cardright" id="tomb">
 
+    <div class="info_section">
+      <div class="movie_header">
 
+        <h1>Interior Design</h1>
+        <h2>Research, Planning, Detailing</h2>
+        <p class="type">Aethetics, Minimalism</p>
+      </div>
+      <div class="movie_desc">
+        <h3 class="text">
+          The art or practice of planning and supervising the design and execution of architectural interiors and their
+          furnishings
+        </h3>
+      </div>
 
+    </div>
 
-  <!--***************************************Client Payment*******************************************-->
-
-  <!--<div class="payment">
-  <div class="buttons firstbuttons">
-    <button class="butn pay" onclick="window.location.href='https://rzp.io/l/AFlShqwwO';"><h5 style="z-index: 0;">Pay</h5></button>
+    <div class="blur_back card2"></div>
   </div>
-</div>-->
+
+
+  <!--********************************** Card 3 *****************************************-->
+
+  <div class="movie_card" id="tomb">
+
+    <div class="info_section">
+      <div class="movie_header">
+
+        <h1>Architecture Walkthrough</h1>
+        <h2>Gain a unique Perspective</h2>
+        <p class="type">Introduction of CGI to project</p>
+      </div>
+      <div class="movie_desc">
+        <h3 class="text">
+          3D animation is designed to look enticing. It is so precise that after viewing
+          the animation clients will be able to find their way around the actual building!
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="blur_back card3"></div>
+  </div>
+
+  <!--********************************** Card 4 *****************************************-->
+
+  <div class="movie_card cardright" id="tomb">
+
+    <div class="info_section">
+      <div class="movie_header">
+
+        <h1>3D Floor Plan</h1>
+        <h2>Gain a better Perspective</h2>
+        <p class="type">Birds eye view</p>
+      </div>
+      <div class="movie_desc">
+        <h3 class="text">
+          Their simplicity allows individuals unfamiliar with conventional floor plans to understand difficult
+          architectural concepts.
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="blur_back card4"></div>
+  </div>
+
+  <!--********************************** Card 5 *****************************************-->
+
+  <div class="movie_card" id="tomb">
+
+    <div class="info_section">
+      <div class="movie_header">
+
+        <h1>3D Section View</h1>
+        <h2>Simulates internal features</h2>
+        <p class="type">Section Drawing</p>
+      </div>
+      <div class="movie_desc">
+        <h3 class="text">
+          It gives a view through the spaces and surrounding structures of the building, which is not apparent in plan
+          drawings.
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="blur_back card5"></div>
+  </div>
+
+  <!--********************************** Card 6 *****************************************-->
+
+  <div class="movie_card cardright" id="tomb">
+
+    <div class="info_section">
+      <div class="movie_header">
+
+        <h1>Landscape Design</h1>
+        <h2>External view of Nature</h2>
+        <p class="type">Enhance the environment</p>
+      </div>
+      <div class="movie_desc">
+        <h3 class="text">
+          The development and decorative planting of gardens, yards, grounds, parks, and other planned green outdoor
+          spaces.
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="blur_back card6"></div>
+  </div>
+
+  <!--********************************** Card 7 *****************************************-->
+
+  <div class="movie_card" id="tomb">
+
+    <div class="info_section">
+      <div class="movie_header">
+
+        <h1>360&deg; VR</h1>
+        <h2>Bringing a shared vision</h2>
+        <p class="type">Liveliness of Virtual Reality</p>
+      </div>
+      <div class="movie_desc">
+        <h3 class="text">
+          You can step into your design and feel what it would be like to inhabit that space.
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="blur_back card7"></div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+
+
+
 
 
 
