@@ -70,7 +70,7 @@
   position: relative;
   transform: translateY(300px);
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease-in;
 
 }
  .activesection{
@@ -1440,7 +1440,9 @@ p {
 
   /* Backgorund Images */
   
-
+.slider{
+  height: 97vh;
+}
 .sslide:first-child {
   background: url("img/p/12\ -\ Copy.jpg") no-repeat
     center bottom/cover;
