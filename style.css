@@ -68,7 +68,7 @@
 
 .reveal{   /*Animation created from javascript on scroll*/
   position: relative;
-  transform: translateY(300px);
+  transform: translateY(220px);
   opacity: 0;
   transition: all 0.8s ease-in;
 
@@ -642,7 +642,7 @@ ul.top li {
     background-attachment: fixed;
 }
 .sslide:nth-child(6) {
-  background: url("img/l/15.jpg") no-repeat
+  background: url("img/l/i230.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
@@ -650,7 +650,7 @@ ul.top li {
   background: url("img/l/20.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
-}
+} /*Check mobile view images as well*/
 
 
 
@@ -1443,6 +1443,9 @@ p {
 .slider{
   height: 97vh;
 }
+.hidemobile{
+  display: none;
+}
 .sslide:first-child {
   background: url("img/p/12\ -\ Copy.jpg") no-repeat
     center bottom/cover;
@@ -1474,7 +1477,7 @@ p {
     background-attachment: fixed;
 }
 .sslide:nth-child(7) {
-  background: url("img/p/13.jpg") no-repeat
+  background: url("img/p/i235.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
