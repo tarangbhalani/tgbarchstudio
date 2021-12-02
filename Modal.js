@@ -1,4 +1,7 @@
 
+/*---------------------------------- Javascript file for portfolio page ----------------------------------- */
+
+
  /* -----------------------Navigation Bar------------------------------ */
 var preloader = document.getElementById('gooey');
 function pageloaded() {
