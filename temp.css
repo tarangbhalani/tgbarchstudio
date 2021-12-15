@@ -1,0 +1,118 @@
+
+.testimonialcontainer{
+    margin-left: 10%;
+}
+@media screen and (max-width: 770px) {
+    .testimonialcontainer{
+    margin-left: 3%;
+    }
+}
+  .testimotionals {
+    width:250px;
+    display:inline-block;
+    margin-right: 140px;
+    margin-bottom: 50px;
+    transition: 1s;
+    cursor: text;
+  }
+  .testimotionals:hover{
+      transform: scale(1.1);
+      transition: 1s;
+  }
+  
+  
+  .testimotionals .card {
+    
+    position:relative;
+    overflow:hidden;
+    width:350px;
+    height: 350px;
+    background:#333;
+    padding: 40px; 
+    box-sizing:border-box;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+    border-radius: 10px;
+  }
+  .testimotionals .card .layer {
+    z-index:1;
+    position:absolute;
+    top:calc(100% - 0px);
+    height:100%;
+    width:100%;
+    left:0;
+    
+    
+  }
+
+  .testimotionals .layer img{
+    padding-top: 100px;
+  }
+  .testimotionals .card .layer1 {
+    background: radial-gradient( orange, tomato);
+    transition: 1s;
+  }
+  
+  .testimotionals .card .layer2 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+    transition: 1s;
+  }
+
+  .testimotionals .card .layer3 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+    transition: 1s;
+  }
+
+  .testimotionals .card .layer4 {
+    background: radial-gradient(#76b2fe, #b69efe);
+    transition: 1s;
+  }
+
+  .testimotionals .card .layer5 {
+    background: radial-gradient(#60efbc, #58d5c9);
+    transition: 1s;
+  }
+
+  .testimotionals .card .layer6 {
+    background: radial-gradient(rgb(248, 248, 84), rgb(245, 221, 85));
+    transition: 1s;
+  }
+
+
+  .testimotionals .card .content {
+    z-index:2; 
+    position:relative;
+  }
+  
+  .testimotionals .card:hover  .layer{
+    top:0;
+  }
+  
+  .testimotionals .card .content p {
+    font-size:14px;
+    line-height:24px;
+    color:#fff;
+    
+  }
+  .cardicons{
+    position: absolute;
+    margin: auto;
+    margin-top: 10%;
+    left: 30%;
+  }
+  
+  .testimotionals .card .details h2 {
+  font-size:18px;
+  color:white;
+  }
+  .content{
+      color: black;
+      font-size: 30px;
+  }
+ 
+  .testimotionals .card:hover .content .details h2 span {
+    color:white;
+    position:relative
+  }
+  
+ 
