@@ -70,7 +70,7 @@
   position: relative;
   transform: translateY(220px);
   opacity: 0;
-  transition: all 0.8s ease-in;
+  transition: all 0.6s ease-out;
 
 }
  .activesection{
@@ -203,20 +203,6 @@ nav {
   text-transform: none;
 }
 
-#navcolor {
-  color: white;
-}
-.padnav2 {
-  color: white;
-}
-.navbutton {
-  font-size: 20px;
-}
-/*.navbutton:hover{
-    background-color: purple;
-    color: purple;
-    text-decoration: underline;
-}*/
 
 .header {
   padding-top: 40px;
@@ -225,35 +211,8 @@ nav {
   color: white;
 }
 
-@keyframes enterFade {
-  from {
-    transform: translateY(60px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.tgb {
-  position: relative;
-  font-size: 60px;
-  color: rgb(253, 253, 253);
-  z-index: 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 20px;
-}
-.tgb b span {
-  position: relative;
-  display: inline-block;
-  animation: enterFade forwards 0.3s;
-  /* color: black; */
-}
-@keyframes entryAnimate {
-  to {
-    box-shadow: 0px 0px 66px 88px rgba(0, 0, 0, 0.3);
-  }
-}
+
+
 
 .overlay {
   height: 100%;
@@ -299,7 +258,7 @@ nav {
 }
 .hamburger{
   font-size: 35px;
-  cursor:pointer; 
+  cursor: pointer; 
   color: black;
 }
 .hamburger:hover{
@@ -501,7 +460,7 @@ ul.top li {
 .mobilecoltext {
   text-align: justify;
   color: rgb(218, 216, 216);
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .background3 {
@@ -665,14 +624,14 @@ ul.top li {
   display: none;
 }
 @media screen and (max-width: 1000px) {
+  .twocoltextcontainer{
+    display: none !important;   
+  }
   .testimonialcontainer{
   margin-left: 5%;
   display: block;
   }
-  .twocoltextcontainer{
-    display: none !important;
-    
-  }
+ 
 }
 
 .twocoltextcontainer{
@@ -809,10 +768,19 @@ input[type="radio"] {
 }
 .js-slider {
   position: relative;
-  width: 80%;
+  width: 70%;
   height: 50vh;
   margin: 0 auto;
   margin-bottom: 300px; /*Bottom most margin*/
+}
+@media screen and (max-width: 770px) {
+  .js-slider{
+    width: 100%;
+  }
+  .js-slider_nav_item {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 .js-slider_item {
   position: absolute;
