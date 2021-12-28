@@ -617,135 +617,12 @@ ul.top li {
 
 
 
-/*------------------------------------------------ Why us cards ----------------------------------------------------------*/
+/*------------------------------------------------ Why us  ----------------------------------------------------------*/
 
-.testimonialcontainer{
-  margin-left: 10%;
-  display: none;
-}
-@media screen and (max-width: 1000px) {
-  .twocoltextcontainer{
-    display: none !important;   
-  }
-  .testimonialcontainer{
-  margin-left: 5%;
-  display: block;
-  }
- 
-}
 
 .twocoltextcontainer{
   display: block;
 }
-.testimotionals {
-  width:250px;
-  display:inline-block;
-  margin-right: 140px;
-  margin-bottom: 50px;
-  transition: 1s;
-  cursor: text;
-  
-}
-.testimotionals:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-
-.testimotionals .card {
-  
-  position:relative;
-  overflow:hidden;
-  width:350px;
-  height: 350px;
-  background:rgb(243, 243, 243);
-  padding: 40px; 
-  box-sizing:border-box;
-  text-align:center;
-  box-shadow:0 10px 40px rgba(0,0,0,.5);
-  border-radius: 10px;
-}
-.testimotionals .card .layer {
-  z-index:1;
-  position:absolute;
-  top:calc(100% - 0px);
-  height:100%;
-  width:100%;
-  left:0;
-  
-  
-}
-
-.testimotionals .layer img{
-  padding-top: 100px;
-}
-.testimotionals .card .layer1 {
-  background: radial-gradient( orange, tomato);
-  transition: 1s;
-}
-
-.testimotionals .card .layer2 {
-  background: radial-gradient(#1fe4f5, #3fbafe);
-  transition: 1s;
-}
-
-.testimotionals .card .layer3 {
-  background: radial-gradient(#fbc1cc, #fa99b2);
-  transition: 1s;
-}
-
-.testimotionals .card .layer4 {
-  background: radial-gradient(#76b2fe, #b69efe);
-  transition: 1s;
-}
-
-.testimotionals .card .layer5 {
-  background: radial-gradient(#60efbc, #58d5c9);
-  transition: 1s;
-}
-
-.testimotionals .card .layer6 {
-  background: radial-gradient(rgb(248, 248, 84), rgb(245, 221, 85));
-  transition: 1s;
-}
-
-
-.testimotionals .card .content {
-  z-index:2; 
-  position:relative;
-}
-
-.testimotionals .card:hover  .layer{
-  top:0;
-}
-
-.testimotionals .card .content p {
-  font-size:14px;
-  line-height:24px;
-  color:black;
-  
-}
-.cardicons{
-  position: absolute;
-  margin: auto;
-  margin-top: 10%;
-  left: 35%;
-}
-
-.testimotionals .card .details h2 {
-font-size:18px;
-color:white;
-}
-.content{
-    color: black;
-    font-size: 30px;
-}
-
-.testimotionals .card:hover .content .details h2 span {
-  color:white;
-  position:relative
-}
-
 
 
 
@@ -771,7 +648,7 @@ input[type="radio"] {
   width: 70%;
   height: 50vh;
   margin: 0 auto;
-  margin-bottom: 300px; /*Bottom most margin*/
+  margin-bottom: 150px; /*Bottom most margin*/
 }
 @media screen and (max-width: 770px) {
   .js-slider{
@@ -969,10 +846,155 @@ figcaption {
 }
 
 
+/*----------------------------------------- Logo animated counter ---------------------------------------*/
+#counter-section-container {
+  width: 100%;
+  text-align: center;
+  background: white;
+}
+
+#counter-box-container {
+  /*border: 1px solid #999999;*/
+  overflow: hidden;
+  display: inline-block;
+}
+
+#counter-box {
+  /*width: 33.22%;*/
+  width: 300px;
+  min-width: 200px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  float: left;
+  text-align: center;
+  /*background-color: #111111;*/
+  color: #c0c0c0;
+  /*border: 1px solid #666666;*/
+}
+
+.counter {
+  font-size: 50px;
+  color: #c0c0c0;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------- Client Logo Slider -------------------------------------------*/
+
+
+.clientlogocontainer{
+  height: 80px;
+}
+.slick-slide {    /*Slide*/
+  float: left;
+  margin: 0 20px;
+}
+
+.slick-slide img {
+  max-width: 100%;
+  max-height: 80px;
+  
+}
+
+
+
+
+.slick-list    /*Container*/
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 10px;
+  
+  padding-bottom: 10px;
+  background: rgb(245, 245, 245);
+  margin: 0;
+ 
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-list:hover{
+  cursor: grab;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0%, 0%, 0%);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0%, 0%, 0%);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
 
 
 
@@ -981,12 +1003,26 @@ figcaption {
   max-height: 70vh;
   border-radius: 8px;
   cursor: pointer; /*Change cursor type on hover*/
-  
+  overflow: hidden;
+  transition: opacity 1s ease; 
 }
 .maxsize:hover{
-  opacity: 0.7;
-  transition: opacity 0.7s ease-out;
+  opacity: 0.9;
 }
+
+.portfoliocontainer { /* now a container for the image */
+  display: inline-block; /* shrink wrap to image */
+  overflow: hidden; /* hide the excess */
+}
+.portfoliocontainer img {
+  display: block; /* no whitespace */
+  transition: transform 4s cubic-bezier(0.1, 0.6, 0.1, 1.0);
+}
+.portfoliocontainer:hover img {
+  transform: scale(1.15);
+}
+
+
 .modal {
   display: none;
   /* Hidden by default */

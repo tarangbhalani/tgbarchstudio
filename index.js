@@ -255,3 +255,4 @@ prev-slide.addEventListener("click", function() {
 
 
 
+
