@@ -182,6 +182,8 @@ td {
   opacity: 1;
 }
 
+
+/*------------------------------------------------ Navigation bar ------------------------------------------------------*/
 nav {
   width: 100%;
   padding: 10px 20px;
@@ -224,24 +226,23 @@ nav {
   background-color: rgba(41, 82, 82, 0.99); /*Please take a note of this color. It is slight different from footer*/
   overflow-x: hidden;
   transition:  0.7s ;
+  max-height: 100vh;
 }
 
 .overlay-content {
   position: relative;
-  top: 10%;
+  top: 20%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
-}
-.overlay-content2{
-  position: relative;
-  top: 10%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 45px !important;
 }
 
+.overlay-content2{
+  position: relative;
+  top: 35%;
+  text-align: center;
+  
+}
 .navtext {
   padding: 8px;
   text-decoration: none;
@@ -252,13 +253,20 @@ nav {
 }
 
 .navtext2 {
-  padding: 8px;
+  padding: 0 40px 0 40px;
   text-decoration: none;
   font-size: 40px;
   color: #cacaca;
-  display: block;
   transition: 0.3s;
 }
+
+@media screen and (max-width: 1000px){
+  .navtext2{
+  font-size: 25px;
+  padding: 0 8px 0 8px;
+  }
+}
+
 
 .overlay-exterior {
   position: absolute;
@@ -1287,6 +1295,7 @@ figcaption {
 .abouttgb {
   text-decoration: none;
   color: black;
+  letter-spacing: 1px;
 }
 .abouttgb:hover {
   text-decoration: none;
@@ -1297,10 +1306,11 @@ figcaption {
 }
 .aboutfont {
   color: #000;
-  font-size: 23px;
   padding-bottom: 100px;
 }
-
+.aboutfont span{
+  font-size: 25px;
+}
 .aboutfontsize{
   font-size: 23px;
 }
@@ -1595,6 +1605,7 @@ p {
 .footer-widget a:hover {
   color: rgb(223, 162, 48);
   text-decoration: none;
+
 }
 .contactfooter{
   color: rgb(223, 162, 48) !important; 

@@ -1,145 +1,168 @@
-.gradientbox {
-    width: 100%;
-    overflow: hidden;
-    padding: 100px;
-    position: relative;
-    background-size: 400% 400%;
-    background-image: linear-gradient(
-      -45deg,
-      orange,
-      orange,
-      #ff3c3f,
-      rgb(58, 117, 117),
-      rgb(28, 117, 117)
-    );
-    transition-duration: 0.5s;
-    animation: Gradient 5s ease infinite;
-    opacity: 0.9;
-    overflow: hidden;
-  }
-  @keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
 
-figure.snip0056 {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 380px;
-  max-width: 480px;
-  width: 100%;
-  background: #ffffff;
-  color: #000000;
+.row {
+  padding: 50px 0;
+  
 }
-figure.snip0056 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+
+.seperator {
+  margin-bottom: 30px;
+  width: 50px;
+  height: 3px;
+  background: #777;
+  border: none;
+  transition: all 0.4s;
 }
-figure.snip0056 > img {
-  width: 50%;
-  border-radius: 50%;
-  border: 4px solid #ffffff;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  -webkit-transform: scale(1.6);
-  transform: scale(1.6);
-  position: relative;
-  float: right;
-  right: -15%;
-  z-index: 1;
+
+
+.title {
+  text-align: center;
+  margin-bottom: 100px;
 }
-figure.snip0056 figcaption {
-  padding: 20px 30px 20px 20px;
-  position: absolute;
-  left: 0;
-  width: 50%;
+.title:hover .seperator{
+  width: 200px;
+  transition: width 0.4s;
 }
-figure.snip0056 figcaption h2,
-figure.snip0056 figcaption p {
-  margin: 0;
-  text-align: left;
-  padding: 10px 0;
-  width: 100%;
+.title .row {
+  padding: 50px 0 0;   /*Padding bottom of about us*/
 }
-figure.snip0056 figcaption h2 {
-  font-size: 1.3em;
-  font-weight: 300;
+.title h1 {
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: text;
 }
-figure.snip0056 figcaption h2 span {
-  font-weight: 800;
+.title .seperator {
+  margin: 0 auto 10px;
 }
-figure.snip0056 figcaption p {
-  font-size: 0.9em;
-  opacity: 0.8;
+
+.rowstyling1{
+ box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
+ padding: 10px;
+
 }
-figure.snip0056 figcaption .icons {
+
+
+.item {
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.item .item-in {
+  background: #fff;
+  padding: 40px;
+  position: relative;
+}
+.item .item-in:hover:before {
   width: 100%;
-  text-align: left;
 }
-figure.snip0056 figcaption .icons i {
-  font-size: 26px;
-  padding: 5px;
-  top: 50%;
-  color: #000000;
+.item .item-in::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 0%;
+  background: #333333;
+  right: 0px;
+  transition: width 0.4s;
 }
-figure.snip0056 figcaption a {
-  opacity: 0.3;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+
+.rowstyling1 h2 {
+  font-size: 20px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: text;
 }
-figure.snip0056 figcaption a:hover {
-  opacity: 0.8;
+
+
+.item p {
+  font-size: 12px;
+  cursor: text;
 }
-figure.snip0056 .position {
-  width: 100%;
-  text-align: left;
-  padding: 15px 30px;
-  font-size: 0.9em;
+.bulletpoints h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: black;
+  letter-spacing: 0px;
+  cursor: text;
+}
+
+
+
+.item a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-top: 10px;
+}
+.item a i {
+  opacity: 0;
+  padding-left: 0px;
+  transition: 0.4s;
+  font-size: 24px;
+  display: inline-block;
+  top: 5px;
+  position: relative;
+}
+.item a:hover {
+  text-decoration: none;
+}
+.item a:hover i {
+  padding-left: 10px;
   opacity: 1;
-  font-style: italic;
-  color: #ffffff;
-  background: #000000;
-  clear: both;
-}
-figure.snip0056.blue .position {
-  background: #20638f;
-}
-figure.snip0056.red .position {
-  background: #962d22;
-}
-figure.snip0056.yellow .position {
-  background: #bf6516;
-}
-figure.snip0056:hover > img,
-figure.snip0056.hover > img {
-  right: -12%;
+  font-weight: 300;
 }
 
-/* Demo purposes only */
-html {
-  height: 100%;
+.item .icon {
+  position: absolute;
+  top: 27px;
+  left: -16px;
+  cursor: pointer;
 }
-body {
-  background-color: #212121;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
-  margin: 0;
-  height: 100%;
+.item .icon a {
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  text-transform: none;
+}
+.item .icon svg {
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+.item .icon .icon-topic {
+  opacity: 0;
+  padding-left: 0px;
+  transition: 0.4s;
+  display: inline-block;
+  top: 0px;
+  position: relative;
+}
+.item .icon:hover .icon-topic {
+  opacity: 1;
+  padding-left: 10px;
 }
 
-
- 
+@media only screen and (max-width: 768px) {
+  .item .icon {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
