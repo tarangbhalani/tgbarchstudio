@@ -1368,14 +1368,19 @@ figcaption {
 /*----------------------------------------------------- Footer -------------------------------------------------------*/
 footer{
   margin-top: 150px;
+  text-decoration: none !important;
+}
+
+.footer a{
+  text-decoration: none;
 }
 .footer-widget p {
   margin-bottom: 27px;
 }
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: white;
+  color: rgb(245, 245, 245);
   line-height: 28px;
 }
 
@@ -1476,6 +1481,7 @@ p {
   position: relative;
   z-index: 2;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 .dk-footer .contact-us {
   margin-top: 0;
@@ -1502,61 +1508,34 @@ p {
   padding: 40px;
   z-index: 2;
 }
-.dk-footer-box-info .footer-social-link h3 { /*Follow us*/
-  color: #fff;
-  font-size: 24px;
-  margin-bottom: 25px;
+
+.footer-h3{
+  padding: 0px;
 }
-.dk-footer-box-info .footer-social-link ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.dk-footer-box-info .footer-social-link li {
-  display: inline-block;
-}
-.dk-footer-box-info .footer-social-link a i { /*Icons*/
-  text-decoration: none;
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 5px;
-  color: #fff;
-  text-decoration: none;
-}
-.dk-footer-box-info .footer-social-link a i.fa-facebook-square {
-  color: rgb(44, 44, 44);
-}
-.dk-footer-box-info .footer-social-link a i.fa-whatsapp {
- color: white;
-}
-.dk-footer-box-info .footer-social-link a i.fa-youtube {
-  color: white;
-}
-.dk-footer-box-info .footer-social-link a i.fa-instagram {
-  color: white;
-}
-.dk-footer-box-info .footer-social-link a i.fa-facebook-square:hover {
-  color: blue;
+
+.footer-social-links{
+  padding-bottom: 20px;
+  position: absolute;
+  left: 40px;
+  display: flex;
+  flex-direction: row;
+ 
   
 }
-.dk-footer-box-info .footer-social-link a i.fa-whatsapp:hover {
-  color: rgb(83, 253, 83);
- }
- .dk-footer-box-info .footer-social-link a i.fa-youtube:hover {
-  color: red;
+.footer-social-links a{
+  color: white;
+  margin-right: 10px;
+  font-size: 1.8em;
+  transition: 0.1s ease;
+ 
 }
-.dk-footer-box-info .footer-social-link a i.fa-instagram:hover {
-  color: rgb(252, 192, 202);
+.footer-social-links a:hover{
+  color: white;
+  transform: scale(1.4);
 }
-
-
-
 
 .footer-info-text {
-  margin: 26px 0 32px;
+  margin: 26px 0 20px;
 }
 
 .footer-left-widget {
@@ -1569,7 +1548,7 @@ p {
 
 .footer-widget h3 { /*main footer text*/
   font-size: 24px;
-  color: #fff;
+  color: rgb(224, 224, 224);
   position: relative;
   margin-bottom: 15px;
   max-width: -webkit-fit-content;
@@ -1594,12 +1573,12 @@ p {
 }
 
 .footer-widget a {
-  color: #ffffff;
+  color: rgb(224,224,224);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 500;
-  font-size:  18px;
+  font-size:  16px;
   font-style: italic;
 }
 .footer-widget a:hover {
@@ -1611,7 +1590,7 @@ p {
   color: rgb(223, 162, 48) !important; 
 }
 .contactfooter:hover{
-  color: white !important;
+  color: rgb(224,224,224) !important;
 }
 
 .footer-widget:after {
@@ -1626,7 +1605,7 @@ p {
 .dk-footer-form input[type="email"] {
   padding: 14px 28px;
   border-radius: 50px;
-  background: #ffffff;
+  background: rgb(224,224,224);
   border: 1px solid #2e2e2e;
 }
 .dk-footer-form input::-webkit-input-placeholder,
@@ -1654,7 +1633,7 @@ p {
   border-bottom-right-radius: 25px;
   border: 1px solid #007bff;
   background: #007bff;
-  color: #fff;
+  color: rgb(224,224,224);
 }
 .dk-footer-form button:hover {
   cursor: pointer;
@@ -1693,7 +1672,7 @@ p {
 
 .contact-info {
   margin-left: 75px;
-  color: #fff;
+  color: rgb(224,224,224);
 }
 .contact-info h3 {
   font-size: 20px;
