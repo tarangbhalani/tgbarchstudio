@@ -68,14 +68,14 @@
         font-size: 35px;
       }
       .movie_header h2 {
-        color: rgb(95, 95, 95);
+        color: rgb(65, 65, 65);
         font-size: 25px;
         font-weight: 500;
       }
       
       .movie_header .type {  /*low opacity font*/
         display: inline-block;
-        color: #959595;
+        color: #000000;
         
         margin-top: 8px;
       }
@@ -85,7 +85,7 @@
       height: 50%; /*height of text section*/
     }
     .movie_desc .text {
-        color: #545454;
+        color: #000000;
         font-size: 15px;
         font-weight: 400;
       }
