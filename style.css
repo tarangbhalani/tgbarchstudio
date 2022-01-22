@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
 * {
@@ -129,7 +130,7 @@ td {
 }
 .allfont {
   /*font-family: 'Times New Roman', Times, serif;*/
-  font-family: 'Poppins', serif;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 
@@ -1379,9 +1380,9 @@ footer{
 .footer-widget p {
   margin-bottom: 27px;
 }
-p {
+footer p {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: rgb(245, 245, 245);
   line-height: 28px;
 }
