@@ -1,168 +1,45 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
-h1, h2, h3, h4 {
-  font-family: "Montserrat", sans-serif;
-}
-
-.row {
-  padding: 50px 0;
-  
-}
-
-.seperator {
-  margin-bottom: 30px;
-  width: 50px;
-  height: 3px;
-  background: #777;
-  border: none;
-  transition: all 0.4s;
-}
-
-
-.title {
+.motto {
   text-align: center;
-  margin-bottom: 100px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title:hover .seperator{
-  width: 200px;
-  transition: width 0.4s;
-}
-.title .row {
-  padding: 50px 0 0;   /*Padding bottom of about us*/
-}
-.title h1 {
-  text-transform: uppercase;
-  cursor: text;
-}
-.title .seperator {
-  margin: 0 auto 10px;
-}
-
-.rowstyling1{
- box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
- padding: 10px;
-
-}
-
-
-.item {
-  position: relative;
-  margin-bottom: 30px;
-  min-height: 1px;
+.motto svg{
   float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  fill: #1c68b3 ;
+  margin-right: 15px;
 }
-.item .item-in {
-  background: #fff;
-  padding: 40px;
-  position: relative;
+@media screen and (max-width: 1000px){
+  .motto svg{
+    display: none;
+  }
 }
-.item .item-in:hover:before {
-  width: 100%;
-}
-.item .item-in::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  height: 2px;
-  width: 0%;
-  background: #333333;
-  right: 0px;
-  transition: width 0.4s;
-}
-
-.rowstyling1 h2 {
-  font-size: 20px;
-  margin-top: 25px;
+.motto h2 {
+  font-size: 40px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 400;
-  cursor: text;
+  padding-top: 60px;
 }
-
-
-.item p {
-  font-size: 12px;
-  cursor: text;
+.motto .linear-wipe {
+  text-align: center;
+  background: linear-gradient(to left, #3A7575 20%, orange 40%, orange 60%, #3A7575 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 1s linear infinite;
+          animation: shine 1s linear infinite;
 }
-.bulletpoints h2{
-  font-family: "Montserrat", sans-serif;
-  font-size: 11px;
-  color: black;
-  letter-spacing: 0px;
-  cursor: text;
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
-
-
-
-.item a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #666666;
-  margin-top: 10px;
-}
-.item a i {
-  opacity: 0;
-  padding-left: 0px;
-  transition: 0.4s;
-  font-size: 24px;
-  display: inline-block;
-  top: 5px;
-  position: relative;
-}
-.item a:hover {
-  text-decoration: none;
-}
-.item a:hover i {
-  padding-left: 10px;
-  opacity: 1;
-  font-weight: 300;
-}
-
-.item .icon {
-  position: absolute;
-  top: 27px;
-  left: -16px;
-  cursor: pointer;
-}
-.item .icon a {
-  font-family: "Merriweather", serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #999;
-  text-transform: none;
-}
-.item .icon svg {
-  width: 32px;
-  height: 32px;
-  float: left;
-}
-.item .icon .icon-topic {
-  opacity: 0;
-  padding-left: 0px;
-  transition: 0.4s;
-  display: inline-block;
-  top: 0px;
-  position: relative;
-}
-.item .icon:hover .icon-topic {
-  opacity: 1;
-  padding-left: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-  .item .icon {
-    position: relative;
-    top: 0;
-    left: 0;
+@keyframes shine {
+  to {
+    background-position: 200% center;
   }
 }
