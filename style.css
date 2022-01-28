@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
@@ -130,7 +130,7 @@ td {
 }
 .allfont {
   /*font-family: 'Times New Roman', Times, serif;*/
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -416,6 +416,7 @@ ul.top li {
   margin-bottom: 100px;
   color: black;
   font-size: 45px;
+  color: rgb(58, 117, 117);
 }
 .threeimageanchors {
   color: black;
@@ -467,6 +468,8 @@ ul.top li {
   margin-bottom: 150px;
   font-size: 45px;
   font-weight: bold;
+  letter-spacing: 2px;
+  color: orange;
 }
 .lastcoltext {
   margin-bottom: 150px;
@@ -482,6 +485,9 @@ ul.top li {
   text-align: center;
   margin-bottom: 100px;
   font-size: 45px;
+  color: orange;
+  letter-spacing: 2px;
+
 }
 .twocoltext {
   margin-bottom: 20px;
