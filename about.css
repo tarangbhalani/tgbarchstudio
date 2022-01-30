@@ -183,7 +183,7 @@ h1, h2, h3, h4 {
     overflow: hidden;
     padding: 150px 10px 250px 50px;
     position: relative;
-    background-size: 400% 400%;
+    background-size: 600% 200%;
     background-image: linear-gradient(
       -45deg,
       orange,
@@ -208,6 +208,12 @@ h1, h2, h3, h4 {
       background-position: 0% 50%;
     }
   }
+  @media screen and (max-width: 770px){
+    .gradientbox{
+      background-size: 1500% 200%;
+    }
+  }
+  
 
   .ourteam{
       text-align: center;
