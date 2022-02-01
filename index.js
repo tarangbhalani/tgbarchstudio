@@ -6,6 +6,7 @@ var preloader = document.getElementById('gooey');
 
     function closeNav() {
       document.getElementById("responsiveSideNav").style.width = "0%";
+      
     }
     function openNav() {
       document.getElementById("responsiveSideNav").style.width = "100%";
