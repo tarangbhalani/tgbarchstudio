@@ -610,8 +610,10 @@ ul.top li {
   }
 }
 
-/* Backgorund Images */
-
+/* Background Images */
+.sslidemobile{
+  display: none;
+}
 .sslide:first-child {
   background: url("img/l/12.jpg") no-repeat
     center bottom/cover;
@@ -623,12 +625,12 @@ ul.top li {
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/l/11.jpg") no-repeat
+  background: url("img/l/36.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/l/1.jpg") no-repeat
+  background: url("img/l/49.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
@@ -646,7 +648,14 @@ ul.top li {
   background: url("img/l/20.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
-} /*Check mobile view images as well*/
+} 
+
+.sslide:nth-child(8) {
+  background: url("img/l/1.jpg") no-repeat
+    center bottom/cover;
+    background-attachment: fixed;
+} 
+/*Check mobile view images as well*/
 
 
 
@@ -1821,6 +1830,9 @@ footer p {
 .hidemobile{
   display: none;
 }
+.sslidemobile{
+  display: block;
+}
 .sslide:first-child {
   background: url("img/p/12\ -\ Copy.jpg") no-repeat
     center bottom/cover;
@@ -1837,7 +1849,7 @@ footer p {
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/p/17.jpg") no-repeat
+  background: url("img/p/41.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
@@ -1847,7 +1859,7 @@ footer p {
     background-attachment: fixed;
 }
 .sslide:nth-child(6) {
-  background: url("img/p/18.jpg") no-repeat
+  background: url("img/p/17.jpg") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
@@ -1856,6 +1868,11 @@ footer p {
     center bottom/cover;
     background-attachment: fixed;
 }
+.sslide:nth-child(8) {
+  background: url("img/p/18.jpg") no-repeat
+    center bottom/cover;
+    background-attachment: fixed;
+} 
 
 .sslide .content {
   background-color: rgba(255, 255, 255, 0);
