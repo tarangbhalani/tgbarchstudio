@@ -204,9 +204,10 @@
       <h2>Quick Contact</h2>
       <br>
       <form action="https://formsubmit.co/umang9427@gmail.com" method="POST">
+        <input type="hidden" name="_subject" id="emailsubject">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_next" value="https://tgbarchstudio.com/contact.html">
+        <input type="hidden" name="_next" id="submissionnext">
         <input type="hidden" name="_autoresponse" value="Thanks!">
 
         <div class="form-group">
@@ -225,7 +226,7 @@
           <textarea name="Message" id="massage" cols="30" rows="10"></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="statusflag()">Submit</button>
       </form>
     </div>
     <div id="status"></div>
