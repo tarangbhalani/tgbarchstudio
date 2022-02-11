@@ -21,6 +21,7 @@
 
   <!--   **** Linking css file ****   -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="icon" href="img/Logo1.png" type="image/icon type">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
@@ -175,9 +176,58 @@
   </div>
 
 
+  <!-- **************************** https://formsubmit.co/ ******************************-->
+  <!--
+ <div class="contactemailus">
+    <h2>Quick Message</h2>
+    <form action="https://formsubmit.co/umang9427@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Email From Website Contact Form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://tgbarchstudio.com/temp.html">
+      <input type="hidden" name="_autoresponse" value="Thanks!">
 
 
 
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <input type="text" name="message" placeholder="Message">
+      <button type="submit">Send</button>
+    </form>
+  </div>-->
+
+
+  <section>
+    <div class="container">
+      <form action="https://formsubmit.co/umang9427@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Email From Website Contact Form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_next" value="https://tgbarchstudio.com/contact.html">
+        <input type="hidden" name="_autoresponse" value="Thanks!">
+
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your Email Address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="massage">Message</label>
+          <textarea name="Message" id="massage" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
 
 
 
