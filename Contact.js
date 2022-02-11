@@ -23,7 +23,7 @@ var preloader = document.getElementById('gooey');
 
 
 
-    /* Back to top fixed button in the website (located on the bottom of screen) */
+    /* ------------Back to top fixed button in the website (located on the bottom of screen)------------------ */
 
     mybutton = document.getElementById("back-to-top");
 
@@ -70,3 +70,29 @@ document.addEventListener('mousewheel', (evt) => {
   capture: true,
   passive: true
 })
+
+
+
+
+
+document.getElementById("submissionnext").value = statusflag();
+var i=0;
+/*----------------------------------------- Email Output ----------------------------------------- */
+function statusflag()
+{
+  var status = document.getElementById("status");
+  i=i+1;
+  document.getElementById("emailsubject").value = i+1;
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
+}
