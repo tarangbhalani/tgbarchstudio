@@ -703,6 +703,24 @@ ul.top li {
     background-color: #000;
 }
 
+@media only screen and (max-width: 770px) {
+  .icon-bar h5{
+    display: none;
+  }
+  .icon-bar{
+    background: rgba(0, 0, 0,0.5);
+  }
+  .icon-bar .socialfixed a{
+    padding: 10px 4px 10px 4px;
+    font-size: 20px;
+  }
+  .ffacebook{
+    margin-top: 0px ;
+  }
+  .yyoutube{
+    margin-bottom: 30px;
+  }
+}
 .ffacebook {
   color: #3B5998;
   margin-top: 45px;  /*Setting the position of Quick connect text properly*/
