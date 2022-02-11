@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
 * {
@@ -130,7 +132,7 @@ td {
 }
 .allfont {
   /*font-family: 'Times New Roman', Times, serif;*/
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 
@@ -225,7 +227,8 @@ nav {
   z-index: 99;
   top: 0;
   left: 0;
-  background-color: rgba(41, 82, 82, 0.99); /*Please take a note of this color. It is slight different from footer*/
+  background-color: rgba(0, 0, 0, 0.1); /*Please take a note of this color. It is slight different from footer*/
+  backdrop-filter: blur(30px);
   overflow-x: hidden;
   transition:  0.7s ;
   max-height: 100vh;
@@ -249,7 +252,7 @@ nav {
   padding: 8px;
   text-decoration: none;
   font-size: 60px;
-  color: #cacaca;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -258,7 +261,7 @@ nav {
   padding: 0 40px 0 40px;
   text-decoration: none;
   font-size: 40px;
-  color: #cacaca;
+  color: black;
   transition: 0.3s;
 }
 
@@ -495,7 +498,8 @@ ul.top li {
 .mobilecoltext {
   text-align: justify;
   color: rgb(241, 241, 241);
-  font-size: 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .background3 {
@@ -547,6 +551,7 @@ ul.top li {
   width: 600px;
   border-radius: 10px;
   background-color: rgba(58, 117, 117, 0.3);
+  backdrop-filter: blur(3px);
   color: white;
   padding: 35px;
   font-weight: 500;
@@ -670,6 +675,9 @@ ul.top li {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 8;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+
 }
 .icon-bar h5{
   display: block;
@@ -677,7 +685,7 @@ ul.top li {
   color: rgb(211, 211, 211);
   font-size: 13px;
   padding: 5px;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   
 }
@@ -697,10 +705,6 @@ ul.top li {
   font-size: 20px;
   border-radius: 2px;
  
-}
-
-.icon-bar {
-    background-color: #000;
 }
 
 @media only screen and (max-width: 770px) {
