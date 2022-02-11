@@ -75,24 +75,3 @@ document.addEventListener('mousewheel', (evt) => {
 
 
 
-document.getElementById("submissionnext").value = statusflag();
-var i=0;
-/*----------------------------------------- Email Output ----------------------------------------- */
-function statusflag()
-{
-  var status = document.getElementById("status");
-  i=i+1;
-  document.getElementById("emailsubject").value = i+1;
-  // Success and Error functions for after the form is submitted
-
-  function success() {
-    form.reset();
-    status.classList.add("success");
-    status.innerHTML = "Thanks!";
-  }
-
-  function error() {
-    status.classList.add("error");
-    status.innerHTML = "Oops! There was a problem.";
-  }
-}

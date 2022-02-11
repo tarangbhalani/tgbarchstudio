@@ -199,37 +199,18 @@
 
 
   <section>
-    <div class="containerform">
-      <br>
-      <h2>Quick Contact</h2>
-      <br>
-      <form action="https://formsubmit.co/umang9427@gmail.com" method="POST">
-        <input type="hidden" name="_subject" id="emailsubject">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_next" id="submissionnext">
-        <input type="hidden" name="_autoresponse" value="Thanks!">
+    <div class="containeremail">
+      <form action="mail.php" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" placeholder="Your name..">
+        <label for="lname">Email</label>
+        <input type="email" name="email" placeholder="Your email..">
 
-        <div class="form-group">
-          <label for="firstName"> First Name</label>
-          <input type="text" name="name" placeholder="Your Name" required>
-        </div>
-
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Your Email Address" required>
-        </div>
-
-        <div class="form-group">
-          <label for="massage">Message</label>
-          <textarea name="Message" id="massage" cols="30" rows="10"></textarea>
-        </div>
-
-        <button type="submit" onclick="statusflag()">Submit</button>
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
       </form>
     </div>
-    <div id="status"></div>
   </section>
 
 
