@@ -675,7 +675,7 @@ ul.top li {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 8;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
   border-radius: 3px;
 
 }
@@ -685,7 +685,7 @@ ul.top li {
   color: rgb(211, 211, 211);
   font-size: 13px;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
   border-radius: 5px;
   
 }
