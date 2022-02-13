@@ -701,7 +701,7 @@ ul.top li {
   display: block;
   text-align: center;
   padding: 10px;
-  transition: all 0.01s ease;
+  transition: all 0.005s ease;
   font-size: 20px;
   border-radius: 2px;
  
@@ -1167,6 +1167,109 @@ figcaption {
 #s-10:checked ~ .js-slider .js-slider_indicator .indi-10:after,
 #s-11:checked ~ .js-slider .js-slider_indicator .indi-11:after {
   transform: translate3d(-50%, -50%, 0) scale(2.5);
+}
+
+
+
+
+
+/*------------------------------------------ Owl Carousel Reviews ---------------------------------------*/
+
+
+.section-padding {    /*Margin above the container*/
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+
+
+.client-testimonial-carousel .owl-dots button {  /*Button at the bottom*/
+  height: 5px;
+  background: orange !important;
+  width: 120px;
+  display: inline-block;
+  margin: 5px;
+  transition: .2s;
+  border-radius: 2px;
+}
+
+.client-testimonial-carousel button.owl-dot.active {
+  background: rgb(58,117,117) !important;
+  width: 30px;
+}
+
+.client-testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 25px
+}
+
+.single-testimonial-item {
+  position: relative;
+  box-shadow: 0 0 15px #dadfd3;
+  margin: 2px;
+  padding: 20px;
+  height: 350px;     /*Height of card*/
+  font-style: italic;
+  padding-left: 85px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px){
+  .section-padding p{
+    font-size: 11px;
+  }
+  .single-testimonial-item:before{
+    left: 0px;
+    font-size: 0;
+    display: none;
+  }
+  .single-testimonial-item:after{
+    display: none;
+  }
+  .single-testimonial-item{
+    width: 100%;
+    padding-left: 10px;
+    height: 400px;
+  }
+  .client-testimonial-carousel .owl-dots button{
+    width: 50px;
+  }
+} 
+ /*Quote sign*/
+.single-testimonial-item:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 20px;
+  color: rgb(58,117,117);
+  line-height: 30px;
+  margin-top: -15px;
+}
+
+.single-testimonial-item:after {
+  background: #ddd;
+  content: "";
+  height: 70%;
+  left: 60px;
+  position: absolute;
+  top: 10%;
+  width: 1px;
+}
+
+.single-testimonial-item h3 {
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.single-testimonial-item h3 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
 

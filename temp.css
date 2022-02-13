@@ -1,45 +1,96 @@
 
-.motto {
+
+
+.section-padding {    /*Margin above the container*/
+  padding: 80px 0;
+}
+
+
+
+.client-testimonial-carousel .owl-dots button {  /*Button at the bottom*/
+  height: 5px;
+  background: orange !important;
+  width: 120px;
+  display: inline-block;
+  margin: 5px;
+  transition: .2s;
+  border-radius: 2px;
+}
+
+.client-testimonial-carousel button.owl-dot.active {
+  background: rgb(58,117,117) !important;
+  width: 30px;
+}
+
+.client-testimonial-carousel .owl-dots {
   text-align: center;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 25px
 }
-.motto svg{
-  float: left;
-  fill: #1c68b3 ;
-  margin-right: 15px;
+
+.single-testimonial-item {
+  position: relative;
+  box-shadow: 0 0 15px #dadfd3;
+  margin: 2px;
+  padding: 20px;
+  height: 350px;     /*Height of card*/
+  font-style: italic;
+  padding-left: 85px;
 }
-@media screen and (max-width: 1000px){
-  .motto svg{
+
+@media only screen and (max-width: 1000px){
+  .section-padding p{
+    font-size: 11px;
+  }
+  .single-testimonial-item:before{
+    left: 0px;
+    font-size: 0;
     display: none;
   }
-}
-.motto h2 {
-  font-size: 40px;
-  letter-spacing: 2px;
-  padding-top: 60px;
-}
-.motto .linear-wipe {
-  text-align: center;
-  background: linear-gradient(to left, #3A7575 20%, orange 40%, orange 60%, #3A7575 80%);
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: shine 1s linear infinite;
-          animation: shine 1s linear infinite;
-}
-@-webkit-keyframes shine {
-  to {
-    background-position: 200% center;
+  .single-testimonial-item:after{
+    display: none;
   }
-}
-@keyframes shine {
-  to {
-    background-position: 200% center;
+  .single-testimonial-item{
+    width: 100%;
+    padding-left: 10px;
+    height: 400px;
   }
+  .client-testimonial-carousel .owl-dots button{
+    width: 50px;
+  }
+} 
+ /*Quote sign*/
+.single-testimonial-item:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 20px;
+  color: rgb(58,117,117);
+  line-height: 30px;
+  margin-top: -15px;
+}
+
+.single-testimonial-item:after {
+  background: #ddd;
+  content: "";
+  height: 70%;
+  left: 60px;
+  position: absolute;
+  top: 10%;
+  width: 1px;
+}
+
+.single-testimonial-item h3 {
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.single-testimonial-item h3 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
 }
